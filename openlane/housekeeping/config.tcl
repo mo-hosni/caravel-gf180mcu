@@ -31,6 +31,7 @@ set ::env(CLOCK_TREE_SYNTH) 1
 
 
 set ::env(BASE_SDC_FILE) [glob $::env(DESIGN_DIR)/base.sdc]
+set ::env(RCX_SDC_FILE) [glob $::env(DESIGN_DIR)/signoff.sdc]
 
 ## Synthesis 
 set ::env(SYNTH_STRATEGY) "AREA 0"
@@ -63,8 +64,8 @@ set ::env(PL_RESIZER_TIMING_OPTIMIZATIONS) 1
 set ::env(PL_RESIZER_SETUP_SLACK_MARGIN) 0.4
 
 set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.1
-set ::env(PL_RESIZER_MAX_SLEW_MARGIN) "50"
-set ::env(PL_RESIZER_MAX_CAP_MARGIN) "50"
+set ::env(PL_RESIZER_MAX_SLEW_MARGIN) 30
+set ::env(PL_RESIZER_MAX_CAP_MARGIN) 30
 
 # set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PERCENT) 50
 # set ::env(PL_RESIZER_ALLOW_SETUP_VIOS) 1
@@ -93,8 +94,13 @@ set ::env(DIODE_PADDING) 0
 # set ::env(CTS_CLK_BUFFER_LIST) {sky130_fd_sc_hd__clkbuf_8 sky130_fd_sc_hd__clkbuf_4}
 # set ::env(CTS_ROOT_BUFFER) {sky130_fd_sc_hd__clkbuf_8}
 # set ::env(CTS_CLK_MAX_WIRE_LENGTH) 120
-set ::env(CTS_MAX_CAP) 0.1
+set ::env(CTS_MAX_CAP) 0.2
 
 set ::env(MAGIC_DEF_LABELS) 0
 
 set ::env(RCX_RULES) $::env(DESIGN_DIR)/RCnom.rules
+set ::env(PL_LIB) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/gf180mcu_fd_sc_mcu7t5v0/liberty/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib"
+set ::env(LIB_FASTEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/gf180mcu_fd_sc_mcu7t5v0/liberty/gf180mcu_fd_sc_mcu7t5v0__ff_n40C_5v50.lib"
+set ::env(LIB_SLOWEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/gf180mcu_fd_sc_mcu7t5v0/liberty/gf180mcu_fd_sc_mcu7t5v0__ss_125C_4v50.lib"
+set ::env(LIB_SYNTH) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/gf180mcu_fd_sc_mcu7t5v0/liberty/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib"
+set ::env(LIB_TYPICAL) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/gf180mcu_fd_sc_mcu7t5v0/liberty/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib"

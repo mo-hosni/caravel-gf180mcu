@@ -2,10 +2,9 @@
 ### Mod Rev 2 
 ### Date: 7/10/2022
 
-set ::env(WB_CLK_PERIOD) 25
-set ::env(SCK_CLK_PERIOD) 100
+set ::env(WB_CLK_PERIOD) 30
+set ::env(SCK_CLK_PERIOD) 120
 set ::env(RESET_PORT) "wb_rstn_i"
-set ::env(STD_CELL_LIBRARY) "sky130_fd_sc_hd"
 
 ## MASTER CLOCKS
 create_clock [get_ports {"wb_clk_i"} ] -name "wb_clk_i"  -period $::env(WB_CLK_PERIOD)
@@ -39,15 +38,14 @@ puts "\[INFO\]: Setting input delay to: $input_delay_value"
 
 ## INPUT DELAYS
 set_input_delay $input_delay_value -clock [get_clocks wb_clk_i] [all_inputs]
-set_input_delay 0 -clock [get_clocks wb_clk_i] [get_port "mgmt_gpio_in[4]"]
-# set_input_delay 0 -clock [get_clocks wb_clk_i] [get_port "wb_clk_i"]
-set_input_delay 0 -clock [get_clocks wb_clk_i] [get_port "user_clock"]
+set_input_delay $input_delay_value -clock [get_clocks wb_clk_i] [get_port "mgmt_gpio_in[4]"]
+set_input_delay $input_delay_value -clock [get_clocks wb_clk_i] [get_port "user_clock"]
 
 ## OUTPUT DELAYS
 
 # WISHBONE DELAY
-set_output_delay -1.5 -clock [get_clocks wb_clk_i] [get_ports wb_ack_o]
-set_output_delay -1.5 -clock [get_clocks wb_clk_i] [get_ports wb_dat_o[*]]
+set_output_delay $output_delay_value -clock [get_clocks wb_clk_i] [get_ports wb_ack_o]
+set_output_delay $output_delay_value -clock [get_clocks wb_clk_i] [get_ports wb_dat_o[*]]
 
 # PLL DELAYS
 set_output_delay $output_delay_value  -clock [get_clocks wb_clk_i] [get_ports pll_ena]
@@ -97,7 +95,7 @@ set_output_delay $output_delay_value  -clock [get_clocks wb_clk_i] [get_ports pa
 # set_output_delay $output_delay_value  -clock [get_clocks wb_clk_i] [get_ports sram_ro_addr[*]]
 
 ## OUTPUT LOADS
-set PT_cap_load 0.21
+set PT_cap_load 0.1
 puts "\[INFO\]: Setting load to: $PT_cap_load"
 set_load $PT_cap_load [all_outputs]
 
@@ -108,8 +106,8 @@ set_load $PT_cap_load [all_outputs]
 # set_timing_derate -late [expr {1+$::env(SYNTH_TIMING_DERATE)}]
 
 ## CLOCK UNCERTAINITY
-set wb_clk_uncer 0.2
-set sck_clk_uncer 0.2
+set wb_clk_uncer 0.3
+set sck_clk_uncer 0.6
 
 puts "\[INFO\]: Setting WB clock uncertainity to: $wb_clk_uncer"
 puts "\[INFO\]: Setting SCK clock uncertainity to: $sck_clk_uncer"
@@ -119,8 +117,8 @@ set_clock_uncertainty $sck_clk_uncer [get_clocks {sck}]
 set_clock_uncertainty $sck_clk_uncer [get_clocks {wbbd_sck}]
 
 ## CLOCK TRANSITION
-# set wb_clk_tran 0.15
-# set sck_clk_tran 0.15
+set wb_clk_tran 2
+set sck_clk_tran 2
 
 # puts "\[INFO\]: Setting clock transition to: $wb_clk_tran"
 # puts "\[INFO\]: Setting clock transition to: $sck_clk_tran"
@@ -135,13 +133,14 @@ set_clock_uncertainty $sck_clk_uncer [get_clocks {wbbd_sck}]
 # set_max_fanout $::env(SYNTH_MAX_FANOUT) [current_design]
 
 # ## MAX Transition
-# set_max_trans 0.75 [current_design]
+set_max_trans 3 [current_design]
+set_max_cap 0.8 [current_design]
 
-# set_max_transition 0.4 [get_clocks {wb_clk_i}] -clock_path
-# set_max_transition 0.4 [get_clocks {user_clock}] -clock_path
-# set_max_transition 0.4 [get_clocks {sck}] -clock_path
+set_max_transition $wb_clk_tran [get_clocks {wb_clk_i}] -clock_path
+set_max_transition $wb_clk_tran [get_clocks {user_clock}] -clock_path
+set_max_transition $wb_clk_tran [get_clocks {sck}] -clock_path
 
-# set_max_transition 0.4 [get_ports {pad_flash_clk}] -clock_path
-# set_max_transition 0.4 [get_ports {mgmt_gpio_out[15]}] -clock_path
-# set_max_transition 0.4 [get_ports {mgmt_gpio_out[9]}] -clock_path
-# set_max_transition 0.4 [get_ports {mgmt_gpio_out[14]}] -clock_path
+set_max_transition $wb_clk_tran [get_ports {pad_flash_clk}] -clock_path
+set_max_transition $wb_clk_tran [get_ports {mgmt_gpio_out[15]}] -clock_path
+set_max_transition $wb_clk_tran [get_ports {mgmt_gpio_out[9]}] -clock_path
+set_max_transition $wb_clk_tran [get_ports {mgmt_gpio_out[14]}] -clock_path
