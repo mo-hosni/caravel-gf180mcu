@@ -1,26 +1,29 @@
-###############################################################################
-# Created by write_sdc
-# Wed Nov 16 19:07:23 2022
-###############################################################################
-current_design housekeeping
+### gf180 Housekeeping Signoff SDC
+### Rev 1
+### Date: 16/11/2022
+
 ###############################################################################
 # Timing Constraints
 ###############################################################################
 create_clock -name wb_clk_i -period 30.0000 [get_ports {wb_clk_i}]
-set_clock_uncertainty 0.3000 wb_clk_i
+set_clock_transition 2.000 [get_clocks {wb_clk_i}]
+set_clock_uncertainty 0.1000 wb_clk_i
 set_propagated_clock [get_clocks {wb_clk_i}]
 create_clock -name user_clock -period 30.0000 [get_ports {user_clock}]
-set_clock_uncertainty 0.3000 user_clock
+set_clock_transition 2.000 [get_clocks {user_clock}]
+set_clock_uncertainty 0.1000 user_clock
 set_propagated_clock [get_clocks {user_clock}]
 create_clock -name sck -period 120.0000 [get_ports {mgmt_gpio_in[4]}]
-set_clock_uncertainty 0.6000 sck
+set_clock_transition 2.000 [get_clocks {sck}]
+set_clock_uncertainty 0.1000 sck
 set_propagated_clock [get_clocks {sck}]
 create_generated_clock -name wbbd_sck -source [get_ports {wb_clk_i}] -divide_by 2 [get_pins {_7958_/Q}]
-set_clock_uncertainty 0.6000 wbbd_sck
 set_propagated_clock [get_clocks {wbbd_sck}]
+set_clock_uncertainty 0.1000 wbbd_sck
 set_clock_groups -name group1 -logically_exclusive \
  -group [get_clocks {sck}]\
  -group [get_clocks {wb_clk_i}]
+
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {debug_mode}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {debug_oeb}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {debug_out}]
@@ -88,7 +91,6 @@ set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgm
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[36]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[37]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[3]}]
-set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[4]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[5]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[6]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {mgmt_gpio_in[7]}]
@@ -116,7 +118,6 @@ set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {spi
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {spimemio_flash_io3_oeb}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {trap}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {uart_enabled}]
-set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {user_clock}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_adr_i[0]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_adr_i[10]}]
 set_input_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_adr_i[11]}]
@@ -357,27 +358,23 @@ set_output_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb
 set_output_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_dat_o[7]}]
 set_output_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_dat_o[8]}]
 set_output_delay 5.0000 -clock [get_clocks {wb_clk_i}] -add_delay [get_ports {wb_dat_o[9]}]
+
 set_false_path\
     -from [list [get_ports {porb}]\
            [get_ports {wb_rstn_i}]]
+
+
 ###############################################################################
 # Environment
 ###############################################################################
 set_load -pin_load 0.1000 [get_ports {debug_in}]
 set_load -pin_load 0.1000 [get_ports {pad_flash_clk}]
-set_load -pin_load 0.1000 [get_ports {pad_flash_clk_oe}]
 set_load -pin_load 0.1000 [get_ports {pad_flash_csb}]
-set_load -pin_load 0.1000 [get_ports {pad_flash_csb_oe}]
 set_load -pin_load 0.1000 [get_ports {pad_flash_io0_do}]
-set_load -pin_load 0.1000 [get_ports {pad_flash_io0_ie}]
-set_load -pin_load 0.1000 [get_ports {pad_flash_io0_oe}]
 set_load -pin_load 0.1000 [get_ports {pad_flash_io1_do}]
-set_load -pin_load 0.1000 [get_ports {pad_flash_io1_ie}]
-set_load -pin_load 0.1000 [get_ports {pad_flash_io1_oe}]
 set_load -pin_load 0.1000 [get_ports {pll_bypass}]
 set_load -pin_load 0.1000 [get_ports {pll_dco_ena}]
 set_load -pin_load 0.1000 [get_ports {pll_ena}]
-set_load -pin_load 0.1000 [get_ports {pwr_ctrl_out}]
 set_load -pin_load 0.1000 [get_ports {reset}]
 set_load -pin_load 0.1000 [get_ports {ser_rx}]
 set_load -pin_load 0.1000 [get_ports {serial_clock}]
@@ -539,15 +536,9 @@ set_load -pin_load 0.1000 [get_ports {wb_dat_o[3]}]
 set_load -pin_load 0.1000 [get_ports {wb_dat_o[2]}]
 set_load -pin_load 0.1000 [get_ports {wb_dat_o[1]}]
 set_load -pin_load 0.1000 [get_ports {wb_dat_o[0]}]
+
 ###############################################################################
 # Design Rules
 ###############################################################################
-set_max_transition 3.0000 [current_design]
-set_max_transition 2.0000 [get_ports {pad_flash_clk}]
-set_max_transition 2.0000 [get_ports {mgmt_gpio_out[15]}]
-set_max_transition 2.0000 [get_ports {mgmt_gpio_out[14]}]
-set_max_transition 2.0000 [get_ports {mgmt_gpio_out[9]}]
-set_max_transition -clock_path 2.0000 [get_clocks {sck}]
-set_max_transition -clock_path 2.0000 [get_clocks {user_clock}]
-set_max_transition -clock_path 2.0000 [get_clocks {wb_clk_i}]
-set_max_capacitance 0.8000 [current_design]
+# set_max_transition 4 [current_design]
+# set_max_fanout 7.0000 [current_design]
