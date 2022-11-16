@@ -96,3 +96,5 @@ set ::env(DIODE_PADDING) 0
 set ::env(CTS_MAX_CAP) 0.1
 
 set ::env(MAGIC_DEF_LABELS) 0
+
+set ::env(RCX_RULES) $::env(DESIGN_DIR)/RCnom.rules

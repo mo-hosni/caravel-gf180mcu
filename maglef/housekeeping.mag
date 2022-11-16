@@ -1,7 +1,7 @@
 magic
 tech gf180mcuC
 magscale 1 5
-timestamp 1668594474
+timestamp 1668610512
 << obsm1 >>
 rect 672 1471 46312 73334
 << metal2 >>
@@ -1732,7 +1732,7 @@ string FIXED_BBOX 0 0 47000 75000
 string LEFclass BLOCK
 string LEFview TRUE
 string GDS_END 11215258
-string GDS_FILE /home/hosni/GF180/caravel-gf180mcu/openlane/housekeeping/runs/RUN_2022.11.16_10.24.28/results/signoff/housekeeping.magic.gds
+string GDS_FILE /home/hosni/GF180/caravel-gf180mcu/openlane/housekeeping/runs/RUN_2022.11.16_14.51.46/results/signoff/housekeeping.magic.gds
 string GDS_START 574546
 << end >>
 
