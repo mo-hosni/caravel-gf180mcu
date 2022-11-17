@@ -1,0 +1,351 @@
+magic
+tech gf180mcuC
+magscale 1 5
+timestamp 1668683682
+<< obsm1 >>
+rect 112 754 8424 5126
+<< metal2 >>
+rect 280 5600 336 6000
+rect 504 5600 560 6000
+rect 728 5600 784 6000
+rect 952 5600 1008 6000
+rect 1176 5600 1232 6000
+rect 1400 5600 1456 6000
+rect 1624 5600 1680 6000
+rect 1848 5600 1904 6000
+rect 2072 5600 2128 6000
+rect 2296 5600 2352 6000
+rect 2520 5600 2576 6000
+rect 2744 5600 2800 6000
+rect 2968 5600 3024 6000
+rect 3192 5600 3248 6000
+rect 3416 5600 3472 6000
+rect 3640 5600 3696 6000
+rect 3864 5600 3920 6000
+rect 4088 5600 4144 6000
+rect 4312 5600 4368 6000
+rect 4536 5600 4592 6000
+rect 4760 5600 4816 6000
+rect 4984 5600 5040 6000
+rect 5208 5600 5264 6000
+rect 5432 5600 5488 6000
+rect 5656 5600 5712 6000
+rect 5880 5600 5936 6000
+rect 6104 5600 6160 6000
+rect 6328 5600 6384 6000
+rect 6552 5600 6608 6000
+rect 6776 5600 6832 6000
+rect 7000 5600 7056 6000
+rect 7224 5600 7280 6000
+rect 7448 5600 7504 6000
+rect 7672 5600 7728 6000
+rect 7896 5600 7952 6000
+rect 8120 5600 8176 6000
+rect 280 0 336 400
+rect 504 0 560 400
+rect 728 0 784 400
+rect 952 0 1008 400
+rect 1176 0 1232 400
+rect 1400 0 1456 400
+rect 1624 0 1680 400
+rect 1848 0 1904 400
+rect 2072 0 2128 400
+rect 2296 0 2352 400
+rect 2520 0 2576 400
+rect 2744 0 2800 400
+rect 2968 0 3024 400
+rect 3192 0 3248 400
+rect 3416 0 3472 400
+rect 3640 0 3696 400
+rect 3864 0 3920 400
+rect 4088 0 4144 400
+rect 4312 0 4368 400
+rect 4536 0 4592 400
+rect 4760 0 4816 400
+rect 4984 0 5040 400
+rect 5208 0 5264 400
+rect 5432 0 5488 400
+rect 5656 0 5712 400
+rect 5880 0 5936 400
+rect 6104 0 6160 400
+rect 6328 0 6384 400
+rect 6552 0 6608 400
+rect 6776 0 6832 400
+rect 7000 0 7056 400
+rect 7224 0 7280 400
+rect 7448 0 7504 400
+rect 7672 0 7728 400
+rect 7896 0 7952 400
+rect 8120 0 8176 400
+<< obsm2 >>
+rect 366 5570 474 5600
+rect 590 5570 698 5600
+rect 814 5570 922 5600
+rect 1038 5570 1146 5600
+rect 1262 5570 1370 5600
+rect 1486 5570 1594 5600
+rect 1710 5570 1818 5600
+rect 1934 5570 2042 5600
+rect 2158 5570 2266 5600
+rect 2382 5570 2490 5600
+rect 2606 5570 2714 5600
+rect 2830 5570 2938 5600
+rect 3054 5570 3162 5600
+rect 3278 5570 3386 5600
+rect 3502 5570 3610 5600
+rect 3726 5570 3834 5600
+rect 3950 5570 4058 5600
+rect 4174 5570 4282 5600
+rect 4398 5570 4506 5600
+rect 4622 5570 4730 5600
+rect 4846 5570 4954 5600
+rect 5070 5570 5178 5600
+rect 5294 5570 5402 5600
+rect 5518 5570 5626 5600
+rect 5742 5570 5850 5600
+rect 5966 5570 6074 5600
+rect 6190 5570 6298 5600
+rect 6414 5570 6522 5600
+rect 6638 5570 6746 5600
+rect 6862 5570 6970 5600
+rect 7086 5570 7194 5600
+rect 7310 5570 7418 5600
+rect 7534 5570 7642 5600
+rect 7758 5570 7866 5600
+rect 7982 5570 8090 5600
+rect 8206 5570 8410 5600
+rect 294 430 8410 5570
+rect 366 400 474 430
+rect 590 400 698 430
+rect 814 400 922 430
+rect 1038 400 1146 430
+rect 1262 400 1370 430
+rect 1486 400 1594 430
+rect 1710 400 1818 430
+rect 1934 400 2042 430
+rect 2158 400 2266 430
+rect 2382 400 2490 430
+rect 2606 400 2714 430
+rect 2830 400 2938 430
+rect 3054 400 3162 430
+rect 3278 400 3386 430
+rect 3502 400 3610 430
+rect 3726 400 3834 430
+rect 3950 400 4058 430
+rect 4174 400 4282 430
+rect 4398 400 4506 430
+rect 4622 400 4730 430
+rect 4846 400 4954 430
+rect 5070 400 5178 430
+rect 5294 400 5402 430
+rect 5518 400 5626 430
+rect 5742 400 5850 430
+rect 5966 400 6074 430
+rect 6190 400 6298 430
+rect 6414 400 6522 430
+rect 6638 400 6746 430
+rect 6862 400 6970 430
+rect 7086 400 7194 430
+rect 7310 400 7418 430
+rect 7534 400 7642 430
+rect 7758 400 7866 430
+rect 7982 400 8090 430
+rect 8206 400 8410 430
+<< metal3 >>
+rect 0 4424 400 4480
+rect 8100 4424 8500 4480
+rect 0 1456 400 1512
+rect 8100 1456 8500 1512
+<< obsm3 >>
+rect 289 4510 8415 5110
+rect 430 4394 8070 4510
+rect 289 1542 8415 4394
+rect 430 1426 8070 1542
+rect 289 770 8415 1426
+<< metal4 >>
+rect 1061 754 1221 5126
+rect 2090 754 2250 5126
+rect 3119 754 3279 5126
+rect 4148 754 4308 5126
+rect 5177 754 5337 5126
+rect 6206 754 6366 5126
+rect 7235 754 7395 5126
+rect 8264 754 8424 5126
+<< labels >>
+rlabel metal4 s 1061 754 1221 5126 6 VDD
+port 1 nsew power bidirectional
+rlabel metal4 s 3119 754 3279 5126 6 VDD
+port 1 nsew power bidirectional
+rlabel metal4 s 5177 754 5337 5126 6 VDD
+port 1 nsew power bidirectional
+rlabel metal4 s 7235 754 7395 5126 6 VDD
+port 1 nsew power bidirectional
+rlabel metal4 s 2090 754 2250 5126 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal4 s 4148 754 4308 5126 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal4 s 6206 754 6366 5126 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal4 s 8264 754 8424 5126 6 VSS
+port 2 nsew ground bidirectional
+rlabel metal2 s 280 0 336 400 6 mgmt_gpio_in[0]
+port 3 nsew signal input
+rlabel metal2 s 2520 0 2576 400 6 mgmt_gpio_in[10]
+port 4 nsew signal input
+rlabel metal2 s 2744 0 2800 400 6 mgmt_gpio_in[11]
+port 5 nsew signal input
+rlabel metal2 s 2968 0 3024 400 6 mgmt_gpio_in[12]
+port 6 nsew signal input
+rlabel metal2 s 3192 0 3248 400 6 mgmt_gpio_in[13]
+port 7 nsew signal input
+rlabel metal2 s 3416 0 3472 400 6 mgmt_gpio_in[14]
+port 8 nsew signal input
+rlabel metal2 s 3640 0 3696 400 6 mgmt_gpio_in[15]
+port 9 nsew signal input
+rlabel metal2 s 3864 0 3920 400 6 mgmt_gpio_in[16]
+port 10 nsew signal input
+rlabel metal2 s 4088 0 4144 400 6 mgmt_gpio_in[17]
+port 11 nsew signal input
+rlabel metal2 s 504 0 560 400 6 mgmt_gpio_in[1]
+port 12 nsew signal input
+rlabel metal2 s 728 0 784 400 6 mgmt_gpio_in[2]
+port 13 nsew signal input
+rlabel metal2 s 952 0 1008 400 6 mgmt_gpio_in[3]
+port 14 nsew signal input
+rlabel metal2 s 1176 0 1232 400 6 mgmt_gpio_in[4]
+port 15 nsew signal input
+rlabel metal2 s 1400 0 1456 400 6 mgmt_gpio_in[5]
+port 16 nsew signal input
+rlabel metal2 s 1624 0 1680 400 6 mgmt_gpio_in[6]
+port 17 nsew signal input
+rlabel metal2 s 1848 0 1904 400 6 mgmt_gpio_in[7]
+port 18 nsew signal input
+rlabel metal2 s 2072 0 2128 400 6 mgmt_gpio_in[8]
+port 19 nsew signal input
+rlabel metal2 s 2296 0 2352 400 6 mgmt_gpio_in[9]
+port 20 nsew signal input
+rlabel metal2 s 280 5600 336 6000 6 mgmt_gpio_in_buf[0]
+port 21 nsew signal output
+rlabel metal2 s 2520 5600 2576 6000 6 mgmt_gpio_in_buf[10]
+port 22 nsew signal output
+rlabel metal2 s 2744 5600 2800 6000 6 mgmt_gpio_in_buf[11]
+port 23 nsew signal output
+rlabel metal2 s 2968 5600 3024 6000 6 mgmt_gpio_in_buf[12]
+port 24 nsew signal output
+rlabel metal2 s 3192 5600 3248 6000 6 mgmt_gpio_in_buf[13]
+port 25 nsew signal output
+rlabel metal2 s 3416 5600 3472 6000 6 mgmt_gpio_in_buf[14]
+port 26 nsew signal output
+rlabel metal2 s 3640 5600 3696 6000 6 mgmt_gpio_in_buf[15]
+port 27 nsew signal output
+rlabel metal2 s 3864 5600 3920 6000 6 mgmt_gpio_in_buf[16]
+port 28 nsew signal output
+rlabel metal2 s 4088 5600 4144 6000 6 mgmt_gpio_in_buf[17]
+port 29 nsew signal output
+rlabel metal2 s 504 5600 560 6000 6 mgmt_gpio_in_buf[1]
+port 30 nsew signal output
+rlabel metal2 s 728 5600 784 6000 6 mgmt_gpio_in_buf[2]
+port 31 nsew signal output
+rlabel metal2 s 952 5600 1008 6000 6 mgmt_gpio_in_buf[3]
+port 32 nsew signal output
+rlabel metal2 s 1176 5600 1232 6000 6 mgmt_gpio_in_buf[4]
+port 33 nsew signal output
+rlabel metal2 s 1400 5600 1456 6000 6 mgmt_gpio_in_buf[5]
+port 34 nsew signal output
+rlabel metal2 s 1624 5600 1680 6000 6 mgmt_gpio_in_buf[6]
+port 35 nsew signal output
+rlabel metal2 s 1848 5600 1904 6000 6 mgmt_gpio_in_buf[7]
+port 36 nsew signal output
+rlabel metal2 s 2072 5600 2128 6000 6 mgmt_gpio_in_buf[8]
+port 37 nsew signal output
+rlabel metal2 s 2296 5600 2352 6000 6 mgmt_gpio_in_buf[9]
+port 38 nsew signal output
+rlabel metal3 s 0 1456 400 1512 6 mgmt_gpio_oeb[0]
+port 39 nsew signal input
+rlabel metal3 s 0 4424 400 4480 6 mgmt_gpio_oeb[1]
+port 40 nsew signal input
+rlabel metal3 s 8100 1456 8500 1512 6 mgmt_gpio_oeb_buf[0]
+port 41 nsew signal output
+rlabel metal3 s 8100 4424 8500 4480 6 mgmt_gpio_oeb_buf[1]
+port 42 nsew signal output
+rlabel metal2 s 4312 5600 4368 6000 6 mgmt_gpio_out[0]
+port 43 nsew signal input
+rlabel metal2 s 6552 5600 6608 6000 6 mgmt_gpio_out[10]
+port 44 nsew signal input
+rlabel metal2 s 6776 5600 6832 6000 6 mgmt_gpio_out[11]
+port 45 nsew signal input
+rlabel metal2 s 7000 5600 7056 6000 6 mgmt_gpio_out[12]
+port 46 nsew signal input
+rlabel metal2 s 7224 5600 7280 6000 6 mgmt_gpio_out[13]
+port 47 nsew signal input
+rlabel metal2 s 7448 5600 7504 6000 6 mgmt_gpio_out[14]
+port 48 nsew signal input
+rlabel metal2 s 7672 5600 7728 6000 6 mgmt_gpio_out[15]
+port 49 nsew signal input
+rlabel metal2 s 7896 5600 7952 6000 6 mgmt_gpio_out[16]
+port 50 nsew signal input
+rlabel metal2 s 8120 5600 8176 6000 6 mgmt_gpio_out[17]
+port 51 nsew signal input
+rlabel metal2 s 4536 5600 4592 6000 6 mgmt_gpio_out[1]
+port 52 nsew signal input
+rlabel metal2 s 4760 5600 4816 6000 6 mgmt_gpio_out[2]
+port 53 nsew signal input
+rlabel metal2 s 4984 5600 5040 6000 6 mgmt_gpio_out[3]
+port 54 nsew signal input
+rlabel metal2 s 5208 5600 5264 6000 6 mgmt_gpio_out[4]
+port 55 nsew signal input
+rlabel metal2 s 5432 5600 5488 6000 6 mgmt_gpio_out[5]
+port 56 nsew signal input
+rlabel metal2 s 5656 5600 5712 6000 6 mgmt_gpio_out[6]
+port 57 nsew signal input
+rlabel metal2 s 5880 5600 5936 6000 6 mgmt_gpio_out[7]
+port 58 nsew signal input
+rlabel metal2 s 6104 5600 6160 6000 6 mgmt_gpio_out[8]
+port 59 nsew signal input
+rlabel metal2 s 6328 5600 6384 6000 6 mgmt_gpio_out[9]
+port 60 nsew signal input
+rlabel metal2 s 4312 0 4368 400 6 mgmt_gpio_out_buf[0]
+port 61 nsew signal output
+rlabel metal2 s 6552 0 6608 400 6 mgmt_gpio_out_buf[10]
+port 62 nsew signal output
+rlabel metal2 s 6776 0 6832 400 6 mgmt_gpio_out_buf[11]
+port 63 nsew signal output
+rlabel metal2 s 7000 0 7056 400 6 mgmt_gpio_out_buf[12]
+port 64 nsew signal output
+rlabel metal2 s 7224 0 7280 400 6 mgmt_gpio_out_buf[13]
+port 65 nsew signal output
+rlabel metal2 s 7448 0 7504 400 6 mgmt_gpio_out_buf[14]
+port 66 nsew signal output
+rlabel metal2 s 7672 0 7728 400 6 mgmt_gpio_out_buf[15]
+port 67 nsew signal output
+rlabel metal2 s 7896 0 7952 400 6 mgmt_gpio_out_buf[16]
+port 68 nsew signal output
+rlabel metal2 s 8120 0 8176 400 6 mgmt_gpio_out_buf[17]
+port 69 nsew signal output
+rlabel metal2 s 4536 0 4592 400 6 mgmt_gpio_out_buf[1]
+port 70 nsew signal output
+rlabel metal2 s 4760 0 4816 400 6 mgmt_gpio_out_buf[2]
+port 71 nsew signal output
+rlabel metal2 s 4984 0 5040 400 6 mgmt_gpio_out_buf[3]
+port 72 nsew signal output
+rlabel metal2 s 5208 0 5264 400 6 mgmt_gpio_out_buf[4]
+port 73 nsew signal output
+rlabel metal2 s 5432 0 5488 400 6 mgmt_gpio_out_buf[5]
+port 74 nsew signal output
+rlabel metal2 s 5656 0 5712 400 6 mgmt_gpio_out_buf[6]
+port 75 nsew signal output
+rlabel metal2 s 5880 0 5936 400 6 mgmt_gpio_out_buf[7]
+port 76 nsew signal output
+rlabel metal2 s 6104 0 6160 400 6 mgmt_gpio_out_buf[8]
+port 77 nsew signal output
+rlabel metal2 s 6328 0 6384 400 6 mgmt_gpio_out_buf[9]
+port 78 nsew signal output
+<< properties >>
+string FIXED_BBOX 0 0 8500 6000
+string LEFclass BLOCK
+string LEFview TRUE
+string GDS_END 161004
+string GDS_FILE /home/hosni/GF180/caravel-gf180mcu/openlane/mprj_io_buffer/runs/RUN_2022.11.17_11.14.22/results/signoff/mprj_io_buffer.magic.gds
+string GDS_START 35294
+<< end >>
+

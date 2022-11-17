@@ -1,0 +1,474 @@
+(DELAYFILE
+ (SDFVERSION "3.0")
+ (DESIGN "mprj_io_buffer")
+ (DATE "Thu Nov 17 11:14:40 2022")
+ (VENDOR "Parallax")
+ (PROGRAM "STA")
+ (VERSION "2.3.2")
+ (DIVIDER .)
+ (TIMESCALE 1ns)
+ (CELL
+  (CELLTYPE "mprj_io_buffer")
+  (INSTANCE)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT mgmt_gpio_in[0] BUF\[20\].I (0.958:0.958:0.958) (0.365:0.365:0.365))
+    (INTERCONNECT mgmt_gpio_in[0] ANTENNA_BUF\[20\]_I.I (0.958:0.958:0.958) (0.365:0.365:0.365))
+    (INTERCONNECT mgmt_gpio_in[10] BUF\[30\].I (1.322:1.322:1.322) (0.504:0.504:0.504))
+    (INTERCONNECT mgmt_gpio_in[10] ANTENNA_BUF\[30\]_I.I (1.322:1.322:1.322) (0.504:0.504:0.504))
+    (INTERCONNECT mgmt_gpio_in[11] BUF\[31\].I (0.981:0.981:0.981) (0.374:0.374:0.374))
+    (INTERCONNECT mgmt_gpio_in[11] ANTENNA_BUF\[31\]_I.I (0.981:0.981:0.981) (0.374:0.374:0.374))
+    (INTERCONNECT mgmt_gpio_in[12] BUF\[32\].I (1.299:1.299:1.299) (0.495:0.495:0.495))
+    (INTERCONNECT mgmt_gpio_in[12] ANTENNA_BUF\[32\]_I.I (1.299:1.299:1.299) (0.495:0.495:0.495))
+    (INTERCONNECT mgmt_gpio_in[13] BUF\[33\].I (1.129:1.129:1.129) (0.430:0.430:0.430))
+    (INTERCONNECT mgmt_gpio_in[13] ANTENNA_BUF\[33\]_I.I (1.129:1.129:1.129) (0.430:0.430:0.430))
+    (INTERCONNECT mgmt_gpio_in[14] BUF\[34\].I (1.172:1.172:1.172) (0.447:0.447:0.447))
+    (INTERCONNECT mgmt_gpio_in[14] ANTENNA_BUF\[34\]_I.I (1.172:1.172:1.172) (0.447:0.447:0.447))
+    (INTERCONNECT mgmt_gpio_in[15] BUF\[35\].I (1.054:1.054:1.054) (0.402:0.402:0.402))
+    (INTERCONNECT mgmt_gpio_in[15] ANTENNA_BUF\[35\]_I.I (1.054:1.054:1.054) (0.402:0.402:0.402))
+    (INTERCONNECT mgmt_gpio_in[16] BUF\[36\].I (1.619:1.619:1.619) (0.617:0.617:0.617))
+    (INTERCONNECT mgmt_gpio_in[16] ANTENNA_BUF\[36\]_I.I (1.619:1.619:1.619) (0.617:0.617:0.617))
+    (INTERCONNECT mgmt_gpio_in[17] BUF\[37\].I (1.357:1.357:1.357) (0.517:0.517:0.517))
+    (INTERCONNECT mgmt_gpio_in[17] ANTENNA_BUF\[37\]_I.I (1.357:1.357:1.357) (0.517:0.517:0.517))
+    (INTERCONNECT mgmt_gpio_in[1] BUF\[21\].I (0.912:0.912:0.912) (0.347:0.347:0.347))
+    (INTERCONNECT mgmt_gpio_in[1] ANTENNA_BUF\[21\]_I.I (0.912:0.912:0.912) (0.347:0.347:0.347))
+    (INTERCONNECT mgmt_gpio_in[2] BUF\[22\].I (1.305:1.305:1.305) (0.497:0.497:0.497))
+    (INTERCONNECT mgmt_gpio_in[2] ANTENNA_BUF\[22\]_I.I (1.305:1.305:1.305) (0.497:0.497:0.497))
+    (INTERCONNECT mgmt_gpio_in[3] BUF\[23\].I (1.479:1.479:1.479) (0.564:0.564:0.564))
+    (INTERCONNECT mgmt_gpio_in[3] ANTENNA_BUF\[23\]_I.I (1.479:1.479:1.479) (0.564:0.564:0.564))
+    (INTERCONNECT mgmt_gpio_in[4] BUF\[24\].I (1.570:1.570:1.570) (0.599:0.599:0.599))
+    (INTERCONNECT mgmt_gpio_in[4] ANTENNA_BUF\[24\]_I.I (1.570:1.570:1.570) (0.598:0.598:0.598))
+    (INTERCONNECT mgmt_gpio_in[5] BUF\[25\].I (1.598:1.598:1.598) (0.609:0.609:0.609))
+    (INTERCONNECT mgmt_gpio_in[5] ANTENNA_BUF\[25\]_I.I (1.598:1.598:1.598) (0.609:0.609:0.609))
+    (INTERCONNECT mgmt_gpio_in[6] BUF\[26\].I (1.253:1.253:1.253) (0.478:0.478:0.478))
+    (INTERCONNECT mgmt_gpio_in[6] ANTENNA_BUF\[26\]_I.I (1.253:1.253:1.253) (0.478:0.478:0.478))
+    (INTERCONNECT mgmt_gpio_in[7] BUF\[27\].I (1.089:1.089:1.089) (0.415:0.415:0.415))
+    (INTERCONNECT mgmt_gpio_in[7] ANTENNA_BUF\[27\]_I.I (1.088:1.088:1.088) (0.415:0.415:0.415))
+    (INTERCONNECT mgmt_gpio_in[8] BUF\[28\].I (1.184:1.184:1.184) (0.451:0.451:0.451))
+    (INTERCONNECT mgmt_gpio_in[8] ANTENNA_BUF\[28\]_I.I (1.184:1.184:1.184) (0.451:0.451:0.451))
+    (INTERCONNECT mgmt_gpio_in[9] BUF\[29\].I (1.060:1.060:1.060) (0.404:0.404:0.404))
+    (INTERCONNECT mgmt_gpio_in[9] ANTENNA_BUF\[29\]_I.I (1.060:1.060:1.060) (0.404:0.404:0.404))
+    (INTERCONNECT mgmt_gpio_oeb[0] BUF\[18\].I (0.912:0.912:0.912) (0.347:0.347:0.347))
+    (INTERCONNECT mgmt_gpio_oeb[0] ANTENNA_BUF\[18\]_I.I (0.912:0.912:0.912) (0.347:0.347:0.347))
+    (INTERCONNECT mgmt_gpio_oeb[1] BUF\[19\].I (1.105:1.105:1.105) (0.421:0.421:0.421))
+    (INTERCONNECT mgmt_gpio_oeb[1] ANTENNA_BUF\[19\]_I.I (1.105:1.105:1.105) (0.421:0.421:0.421))
+    (INTERCONNECT mgmt_gpio_out[0] BUF\[0\].I (1.565:1.565:1.565) (0.596:0.596:0.596))
+    (INTERCONNECT mgmt_gpio_out[0] ANTENNA_BUF\[0\]_I.I (1.565:1.565:1.565) (0.596:0.596:0.596))
+    (INTERCONNECT mgmt_gpio_out[10] BUF\[10\].I (1.157:1.157:1.157) (0.441:0.441:0.441))
+    (INTERCONNECT mgmt_gpio_out[10] ANTENNA_BUF\[10\]_I.I (1.157:1.157:1.157) (0.441:0.441:0.441))
+    (INTERCONNECT mgmt_gpio_out[11] BUF\[11\].I (1.539:1.539:1.539) (0.586:0.586:0.586))
+    (INTERCONNECT mgmt_gpio_out[11] ANTENNA_BUF\[11\]_I.I (1.539:1.539:1.539) (0.586:0.586:0.586))
+    (INTERCONNECT mgmt_gpio_out[12] BUF\[12\].I (1.459:1.459:1.459) (0.556:0.556:0.556))
+    (INTERCONNECT mgmt_gpio_out[12] ANTENNA_BUF\[12\]_I.I (1.459:1.459:1.459) (0.556:0.556:0.556))
+    (INTERCONNECT mgmt_gpio_out[13] BUF\[13\].I (1.090:1.090:1.090) (0.415:0.415:0.415))
+    (INTERCONNECT mgmt_gpio_out[13] ANTENNA_BUF\[13\]_I.I (1.090:1.090:1.090) (0.415:0.415:0.415))
+    (INTERCONNECT mgmt_gpio_out[14] BUF\[14\].I (0.933:0.933:0.933) (0.355:0.355:0.355))
+    (INTERCONNECT mgmt_gpio_out[14] ANTENNA_BUF\[14\]_I.I (0.933:0.933:0.933) (0.355:0.355:0.355))
+    (INTERCONNECT mgmt_gpio_out[15] BUF\[15\].I (1.258:1.258:1.258) (0.480:0.480:0.480))
+    (INTERCONNECT mgmt_gpio_out[15] ANTENNA_BUF\[15\]_I.I (1.258:1.258:1.258) (0.480:0.480:0.480))
+    (INTERCONNECT mgmt_gpio_out[16] BUF\[16\].I (1.283:1.283:1.283) (0.489:0.489:0.489))
+    (INTERCONNECT mgmt_gpio_out[16] ANTENNA_BUF\[16\]_I.I (1.283:1.283:1.283) (0.489:0.489:0.489))
+    (INTERCONNECT mgmt_gpio_out[17] BUF\[17\].I (1.174:1.174:1.174) (0.447:0.447:0.447))
+    (INTERCONNECT mgmt_gpio_out[17] ANTENNA_BUF\[17\]_I.I (1.174:1.174:1.174) (0.447:0.447:0.447))
+    (INTERCONNECT mgmt_gpio_out[1] BUF\[1\].I (1.278:1.278:1.278) (0.487:0.487:0.487))
+    (INTERCONNECT mgmt_gpio_out[1] ANTENNA_BUF\[1\]_I.I (1.278:1.278:1.278) (0.487:0.487:0.487))
+    (INTERCONNECT mgmt_gpio_out[2] BUF\[2\].I (1.365:1.365:1.365) (0.520:0.520:0.520))
+    (INTERCONNECT mgmt_gpio_out[2] ANTENNA_BUF\[2\]_I.I (1.365:1.365:1.365) (0.520:0.520:0.520))
+    (INTERCONNECT mgmt_gpio_out[3] BUF\[3\].I (1.418:1.418:1.418) (0.540:0.540:0.540))
+    (INTERCONNECT mgmt_gpio_out[3] ANTENNA_BUF\[3\]_I.I (1.418:1.418:1.418) (0.540:0.540:0.540))
+    (INTERCONNECT mgmt_gpio_out[4] BUF\[4\].I (1.326:1.326:1.326) (0.505:0.505:0.505))
+    (INTERCONNECT mgmt_gpio_out[4] ANTENNA_BUF\[4\]_I.I (1.326:1.326:1.326) (0.505:0.505:0.505))
+    (INTERCONNECT mgmt_gpio_out[5] BUF\[5\].I (1.534:1.534:1.534) (0.585:0.585:0.585))
+    (INTERCONNECT mgmt_gpio_out[5] ANTENNA_BUF\[5\]_I.I (1.534:1.534:1.534) (0.585:0.585:0.585))
+    (INTERCONNECT mgmt_gpio_out[6] BUF\[6\].I (1.268:1.268:1.268) (0.483:0.483:0.483))
+    (INTERCONNECT mgmt_gpio_out[6] ANTENNA_BUF\[6\]_I.I (1.268:1.268:1.268) (0.483:0.483:0.483))
+    (INTERCONNECT mgmt_gpio_out[7] BUF\[7\].I (1.397:1.397:1.397) (0.532:0.532:0.532))
+    (INTERCONNECT mgmt_gpio_out[7] ANTENNA_BUF\[7\]_I.I (1.397:1.397:1.397) (0.532:0.532:0.532))
+    (INTERCONNECT mgmt_gpio_out[8] BUF\[8\].I (1.098:1.098:1.098) (0.418:0.418:0.418))
+    (INTERCONNECT mgmt_gpio_out[8] ANTENNA_BUF\[8\]_I.I (1.098:1.098:1.098) (0.418:0.418:0.418))
+    (INTERCONNECT mgmt_gpio_out[9] BUF\[9\].I (1.105:1.105:1.105) (0.421:0.421:0.421))
+    (INTERCONNECT mgmt_gpio_out[9] ANTENNA_BUF\[9\]_I.I (1.105:1.105:1.105) (0.421:0.421:0.421))
+    (INTERCONNECT BUF\[0\].Z mgmt_gpio_out_buf[0] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[10\].Z mgmt_gpio_out_buf[10] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[11\].Z mgmt_gpio_out_buf[11] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[12\].Z mgmt_gpio_out_buf[12] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[13\].Z mgmt_gpio_out_buf[13] (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[14\].Z mgmt_gpio_out_buf[14] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[15\].Z mgmt_gpio_out_buf[15] (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[16\].Z mgmt_gpio_out_buf[16] (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[17\].Z mgmt_gpio_out_buf[17] (0.003:0.003:0.003) (0.003:0.003:0.003))
+    (INTERCONNECT BUF\[18\].Z mgmt_gpio_oeb_buf[0] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[19\].Z mgmt_gpio_oeb_buf[1] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[1\].Z mgmt_gpio_out_buf[1] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[20\].Z mgmt_gpio_in_buf[0] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[21\].Z mgmt_gpio_in_buf[1] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[22\].Z mgmt_gpio_in_buf[2] (0.000:0.000:0.000))
+    (INTERCONNECT BUF\[23\].Z mgmt_gpio_in_buf[3] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[24\].Z mgmt_gpio_in_buf[4] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[25\].Z mgmt_gpio_in_buf[5] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[26\].Z mgmt_gpio_in_buf[6] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[27\].Z mgmt_gpio_in_buf[7] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[28\].Z mgmt_gpio_in_buf[8] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[29\].Z mgmt_gpio_in_buf[9] (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[2\].Z mgmt_gpio_out_buf[2] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[30\].Z mgmt_gpio_in_buf[10] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[31\].Z mgmt_gpio_in_buf[11] (0.001:0.001:0.001) (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[32\].Z mgmt_gpio_in_buf[12] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[33\].Z mgmt_gpio_in_buf[13] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[34\].Z mgmt_gpio_in_buf[14] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[35\].Z mgmt_gpio_in_buf[15] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[36\].Z mgmt_gpio_in_buf[16] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[37\].Z mgmt_gpio_in_buf[17] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[3\].Z mgmt_gpio_out_buf[3] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[4\].Z mgmt_gpio_out_buf[4] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[5\].Z mgmt_gpio_out_buf[5] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[6\].Z mgmt_gpio_out_buf[6] (0.002:0.002:0.002) (0.002:0.002:0.002))
+    (INTERCONNECT BUF\[7\].Z mgmt_gpio_out_buf[7] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[8\].Z mgmt_gpio_out_buf[8] (0.001:0.001:0.001))
+    (INTERCONNECT BUF\[9\].Z mgmt_gpio_out_buf[9] (0.002:0.002:0.002) (0.002:0.002:0.002))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[0\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.981:2.981:2.981) (2.643:2.643:2.643))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[10\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.790:2.790:2.790) (2.554:2.554:2.554))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[11\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.976:2.976:2.976) (2.642:2.642:2.642))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[12\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.950:2.950:2.950) (2.630:2.630:2.630))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[13\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.790:2.790:2.790) (2.559:2.559:2.559))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[14\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.709:2.709:2.709) (2.512:2.512:2.512))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[15\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.827:2.827:2.827) (2.572:2.572:2.572))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[16\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.846:2.846:2.846) (2.570:2.570:2.570))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[17\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.836:2.836:2.836) (2.573:2.573:2.573))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[18\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.688:2.688:2.688) (2.499:2.499:2.499))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[19\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.780:2.780:2.780) (2.551:2.551:2.551))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[1\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.836:2.836:2.836) (2.563:2.563:2.563))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[20\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.691:2.691:2.691) (2.497:2.497:2.497))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[21\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.700:2.700:2.700) (2.508:2.508:2.508))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[22\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.844:2.844:2.844) (2.566:2.566:2.566))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[23\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.943:2.943:2.943) (2.623:2.623:2.623))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[24\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (3.001:3.001:3.001) (2.675:2.675:2.675))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[25\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (3.006:3.006:3.006) (2.658:2.658:2.658))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[26\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.844:2.844:2.844) (2.586:2.586:2.586))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[27\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.788:2.788:2.788) (2.558:2.558:2.558))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[28\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.799:2.799:2.799) (2.558:2.558:2.558))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[29\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.750:2.750:2.750) (2.532:2.532:2.532))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[2\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.890:2.890:2.890) (2.594:2.594:2.594))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[30\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.875:2.875:2.875) (2.588:2.588:2.588))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[31\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.709:2.709:2.709) (2.508:2.508:2.508))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[32\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.902:2.902:2.902) (2.625:2.625:2.625))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[33\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.856:2.856:2.856) (2.592:2.592:2.592))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[34\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.791:2.791:2.791) (2.553:2.553:2.553))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[35\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.796:2.796:2.796) (2.567:2.567:2.567))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[36\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (3.018:3.018:3.018) (2.666:2.666:2.666))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[37\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.884:2.884:2.884) (2.607:2.607:2.607))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[3\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.940:2.940:2.940) (2.626:2.626:2.626))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[4\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.893:2.893:2.893) (2.601:2.601:2.601))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[5\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.969:2.969:2.969) (2.637:2.637:2.637))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[6\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.872:2.872:2.872) (2.591:2.591:2.591))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[7\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.909:2.909:2.909) (2.605:2.605:2.605))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[8\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.770:2.770:2.770) (2.544:2.544:2.544))
+   )
+  )
+ )
+ (CELL
+  (CELLTYPE "gf180mcu_fd_sc_mcu7t5v0__clkbuf_8")
+  (INSTANCE BUF\[9\])
+  (DELAY
+   (ABSOLUTE
+    (IOPATH I Z (2.803:2.803:2.803) (2.567:2.567:2.567))
+   )
+  )
+ )
+)

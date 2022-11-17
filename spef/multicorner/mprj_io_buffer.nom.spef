@@ -1,0 +1,2110 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "mprj_io_buffer"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*3 mgmt_gpio_in[0]
+*4 mgmt_gpio_in[10]
+*5 mgmt_gpio_in[11]
+*6 mgmt_gpio_in[12]
+*7 mgmt_gpio_in[13]
+*8 mgmt_gpio_in[14]
+*9 mgmt_gpio_in[15]
+*10 mgmt_gpio_in[16]
+*11 mgmt_gpio_in[17]
+*12 mgmt_gpio_in[1]
+*13 mgmt_gpio_in[2]
+*14 mgmt_gpio_in[3]
+*15 mgmt_gpio_in[4]
+*16 mgmt_gpio_in[5]
+*17 mgmt_gpio_in[6]
+*18 mgmt_gpio_in[7]
+*19 mgmt_gpio_in[8]
+*20 mgmt_gpio_in[9]
+*21 mgmt_gpio_in_buf[0]
+*22 mgmt_gpio_in_buf[10]
+*23 mgmt_gpio_in_buf[11]
+*24 mgmt_gpio_in_buf[12]
+*25 mgmt_gpio_in_buf[13]
+*26 mgmt_gpio_in_buf[14]
+*27 mgmt_gpio_in_buf[15]
+*28 mgmt_gpio_in_buf[16]
+*29 mgmt_gpio_in_buf[17]
+*30 mgmt_gpio_in_buf[1]
+*31 mgmt_gpio_in_buf[2]
+*32 mgmt_gpio_in_buf[3]
+*33 mgmt_gpio_in_buf[4]
+*34 mgmt_gpio_in_buf[5]
+*35 mgmt_gpio_in_buf[6]
+*36 mgmt_gpio_in_buf[7]
+*37 mgmt_gpio_in_buf[8]
+*38 mgmt_gpio_in_buf[9]
+*39 mgmt_gpio_oeb[0]
+*40 mgmt_gpio_oeb[1]
+*41 mgmt_gpio_oeb_buf[0]
+*42 mgmt_gpio_oeb_buf[1]
+*43 mgmt_gpio_out[0]
+*44 mgmt_gpio_out[10]
+*45 mgmt_gpio_out[11]
+*46 mgmt_gpio_out[12]
+*47 mgmt_gpio_out[13]
+*48 mgmt_gpio_out[14]
+*49 mgmt_gpio_out[15]
+*50 mgmt_gpio_out[16]
+*51 mgmt_gpio_out[17]
+*52 mgmt_gpio_out[1]
+*53 mgmt_gpio_out[2]
+*54 mgmt_gpio_out[3]
+*55 mgmt_gpio_out[4]
+*56 mgmt_gpio_out[5]
+*57 mgmt_gpio_out[6]
+*58 mgmt_gpio_out[7]
+*59 mgmt_gpio_out[8]
+*60 mgmt_gpio_out[9]
+*61 mgmt_gpio_out_buf[0]
+*62 mgmt_gpio_out_buf[10]
+*63 mgmt_gpio_out_buf[11]
+*64 mgmt_gpio_out_buf[12]
+*65 mgmt_gpio_out_buf[13]
+*66 mgmt_gpio_out_buf[14]
+*67 mgmt_gpio_out_buf[15]
+*68 mgmt_gpio_out_buf[16]
+*69 mgmt_gpio_out_buf[17]
+*70 mgmt_gpio_out_buf[1]
+*71 mgmt_gpio_out_buf[2]
+*72 mgmt_gpio_out_buf[3]
+*73 mgmt_gpio_out_buf[4]
+*74 mgmt_gpio_out_buf[5]
+*75 mgmt_gpio_out_buf[6]
+*76 mgmt_gpio_out_buf[7]
+*77 mgmt_gpio_out_buf[8]
+*78 mgmt_gpio_out_buf[9]
+*79 ANTENNA_BUF\[0\]_I
+*80 ANTENNA_BUF\[10\]_I
+*81 ANTENNA_BUF\[11\]_I
+*82 ANTENNA_BUF\[12\]_I
+*83 ANTENNA_BUF\[13\]_I
+*84 ANTENNA_BUF\[14\]_I
+*85 ANTENNA_BUF\[15\]_I
+*86 ANTENNA_BUF\[16\]_I
+*87 ANTENNA_BUF\[17\]_I
+*88 ANTENNA_BUF\[18\]_I
+*89 ANTENNA_BUF\[19\]_I
+*90 ANTENNA_BUF\[1\]_I
+*91 ANTENNA_BUF\[20\]_I
+*92 ANTENNA_BUF\[21\]_I
+*93 ANTENNA_BUF\[22\]_I
+*94 ANTENNA_BUF\[23\]_I
+*95 ANTENNA_BUF\[24\]_I
+*96 ANTENNA_BUF\[25\]_I
+*97 ANTENNA_BUF\[26\]_I
+*98 ANTENNA_BUF\[27\]_I
+*99 ANTENNA_BUF\[28\]_I
+*100 ANTENNA_BUF\[29\]_I
+*101 ANTENNA_BUF\[2\]_I
+*102 ANTENNA_BUF\[30\]_I
+*103 ANTENNA_BUF\[31\]_I
+*104 ANTENNA_BUF\[32\]_I
+*105 ANTENNA_BUF\[33\]_I
+*106 ANTENNA_BUF\[34\]_I
+*107 ANTENNA_BUF\[35\]_I
+*108 ANTENNA_BUF\[36\]_I
+*109 ANTENNA_BUF\[37\]_I
+*110 ANTENNA_BUF\[3\]_I
+*111 ANTENNA_BUF\[4\]_I
+*112 ANTENNA_BUF\[5\]_I
+*113 ANTENNA_BUF\[6\]_I
+*114 ANTENNA_BUF\[7\]_I
+*115 ANTENNA_BUF\[8\]_I
+*116 ANTENNA_BUF\[9\]_I
+*117 BUF\[0\]
+*118 BUF\[10\]
+*119 BUF\[11\]
+*120 BUF\[12\]
+*121 BUF\[13\]
+*122 BUF\[14\]
+*123 BUF\[15\]
+*124 BUF\[16\]
+*125 BUF\[17\]
+*126 BUF\[18\]
+*127 BUF\[19\]
+*128 BUF\[1\]
+*129 BUF\[20\]
+*130 BUF\[21\]
+*131 BUF\[22\]
+*132 BUF\[23\]
+*133 BUF\[24\]
+*134 BUF\[25\]
+*135 BUF\[26\]
+*136 BUF\[27\]
+*137 BUF\[28\]
+*138 BUF\[29\]
+*139 BUF\[2\]
+*140 BUF\[30\]
+*141 BUF\[31\]
+*142 BUF\[32\]
+*143 BUF\[33\]
+*144 BUF\[34\]
+*145 BUF\[35\]
+*146 BUF\[36\]
+*147 BUF\[37\]
+*148 BUF\[3\]
+*149 BUF\[4\]
+*150 BUF\[5\]
+*151 BUF\[6\]
+*152 BUF\[7\]
+*153 BUF\[8\]
+*154 BUF\[9\]
+*155 FILLER_0_103
+*156 FILLER_0_107
+*157 FILLER_0_134
+*158 FILLER_0_138
+*159 FILLER_0_142
+*160 FILLER_0_144
+*161 FILLER_0_2
+*162 FILLER_0_34
+*163 FILLER_0_37
+*164 FILLER_0_6
+*165 FILLER_0_65
+*166 FILLER_0_69
+*167 FILLER_0_72
+*168 FILLER_0_99
+*169 FILLER_10_104
+*170 FILLER_10_107
+*171 FILLER_10_134
+*172 FILLER_10_138
+*173 FILLER_10_142
+*174 FILLER_10_144
+*175 FILLER_10_2
+*176 FILLER_10_34
+*177 FILLER_10_37
+*178 FILLER_10_41
+*179 FILLER_10_45
+*180 FILLER_10_6
+*181 FILLER_10_61
+*182 FILLER_10_69
+*183 FILLER_10_72
+*184 FILLER_1_10
+*185 FILLER_1_111
+*186 FILLER_1_139
+*187 FILLER_1_14
+*188 FILLER_1_141
+*189 FILLER_1_144
+*190 FILLER_1_2
+*191 FILLER_1_42
+*192 FILLER_1_70
+*193 FILLER_1_73
+*194 FILLER_1_76
+*195 FILLER_1_84
+*196 FILLER_2_101
+*197 FILLER_2_105
+*198 FILLER_2_108
+*199 FILLER_2_135
+*200 FILLER_2_139
+*201 FILLER_2_143
+*202 FILLER_2_2
+*203 FILLER_2_34
+*204 FILLER_2_37
+*205 FILLER_2_40
+*206 FILLER_2_6
+*207 FILLER_2_68
+*208 FILLER_2_96
+*209 FILLER_2_98
+*210 FILLER_3_118
+*211 FILLER_3_122
+*212 FILLER_3_126
+*213 FILLER_3_144
+*214 FILLER_3_2
+*215 FILLER_3_29
+*216 FILLER_3_57
+*217 FILLER_3_61
+*218 FILLER_3_65
+*219 FILLER_3_67
+*220 FILLER_3_70
+*221 FILLER_3_73
+*222 FILLER_3_76
+*223 FILLER_3_80
+*224 FILLER_3_88
+*225 FILLER_4_105
+*226 FILLER_4_108
+*227 FILLER_4_135
+*228 FILLER_4_139
+*229 FILLER_4_143
+*230 FILLER_4_2
+*231 FILLER_4_34
+*232 FILLER_4_37
+*233 FILLER_4_40
+*234 FILLER_4_42
+*235 FILLER_4_6
+*236 FILLER_4_69
+*237 FILLER_4_99
+*238 FILLER_5_10
+*239 FILLER_5_103
+*240 FILLER_5_131
+*241 FILLER_5_139
+*242 FILLER_5_14
+*243 FILLER_5_141
+*244 FILLER_5_144
+*245 FILLER_5_2
+*246 FILLER_5_42
+*247 FILLER_5_70
+*248 FILLER_5_73
+*249 FILLER_6_100
+*250 FILLER_6_102
+*251 FILLER_6_105
+*252 FILLER_6_108
+*253 FILLER_6_135
+*254 FILLER_6_139
+*255 FILLER_6_143
+*256 FILLER_6_2
+*257 FILLER_6_34
+*258 FILLER_6_37
+*259 FILLER_6_40
+*260 FILLER_6_44
+*261 FILLER_6_48
+*262 FILLER_6_56
+*263 FILLER_6_6
+*264 FILLER_6_60
+*265 FILLER_6_88
+*266 FILLER_6_92
+*267 FILLER_7_122
+*268 FILLER_7_126
+*269 FILLER_7_144
+*270 FILLER_7_2
+*271 FILLER_7_33
+*272 FILLER_7_6
+*273 FILLER_7_61
+*274 FILLER_7_65
+*275 FILLER_7_69
+*276 FILLER_7_73
+*277 FILLER_7_89
+*278 FILLER_7_93
+*279 FILLER_7_95
+*280 FILLER_8_100
+*281 FILLER_8_102
+*282 FILLER_8_105
+*283 FILLER_8_108
+*284 FILLER_8_135
+*285 FILLER_8_139
+*286 FILLER_8_143
+*287 FILLER_8_2
+*288 FILLER_8_34
+*289 FILLER_8_37
+*290 FILLER_8_40
+*291 FILLER_8_44
+*292 FILLER_8_52
+*293 FILLER_8_56
+*294 FILLER_8_6
+*295 FILLER_8_84
+*296 FILLER_8_88
+*297 FILLER_8_96
+*298 FILLER_9_10
+*299 FILLER_9_106
+*300 FILLER_9_12
+*301 FILLER_9_134
+*302 FILLER_9_138
+*303 FILLER_9_144
+*304 FILLER_9_2
+*305 FILLER_9_39
+*306 FILLER_9_43
+*307 FILLER_9_70
+*308 FILLER_9_73
+*309 FILLER_9_77
+*310 FILLER_9_79
+*311 PHY_0
+*312 PHY_1
+*313 PHY_10
+*314 PHY_11
+*315 PHY_12
+*316 PHY_13
+*317 PHY_14
+*318 PHY_15
+*319 PHY_16
+*320 PHY_17
+*321 PHY_18
+*322 PHY_19
+*323 PHY_2
+*324 PHY_20
+*325 PHY_21
+*326 PHY_3
+*327 PHY_4
+*328 PHY_5
+*329 PHY_6
+*330 PHY_7
+*331 PHY_8
+*332 PHY_9
+*333 TAP_22
+*334 TAP_23
+*335 TAP_24
+*336 TAP_25
+*337 TAP_26
+*338 TAP_27
+*339 TAP_28
+*340 TAP_29
+*341 TAP_30
+*342 TAP_31
+*343 TAP_32
+*344 TAP_33
+*345 TAP_34
+*346 TAP_35
+*347 TAP_36
+*348 TAP_37
+*349 TAP_38
+*350 TAP_39
+*351 TAP_40
+*352 TAP_41
+*353 TAP_42
+*354 TAP_43
+*355 TAP_44
+*356 TAP_45
+*357 TAP_46
+*358 TAP_47
+
+*PORTS
+mgmt_gpio_in[0] I
+mgmt_gpio_in[10] I
+mgmt_gpio_in[11] I
+mgmt_gpio_in[12] I
+mgmt_gpio_in[13] I
+mgmt_gpio_in[14] I
+mgmt_gpio_in[15] I
+mgmt_gpio_in[16] I
+mgmt_gpio_in[17] I
+mgmt_gpio_in[1] I
+mgmt_gpio_in[2] I
+mgmt_gpio_in[3] I
+mgmt_gpio_in[4] I
+mgmt_gpio_in[5] I
+mgmt_gpio_in[6] I
+mgmt_gpio_in[7] I
+mgmt_gpio_in[8] I
+mgmt_gpio_in[9] I
+mgmt_gpio_in_buf[0] O
+mgmt_gpio_in_buf[10] O
+mgmt_gpio_in_buf[11] O
+mgmt_gpio_in_buf[12] O
+mgmt_gpio_in_buf[13] O
+mgmt_gpio_in_buf[14] O
+mgmt_gpio_in_buf[15] O
+mgmt_gpio_in_buf[16] O
+mgmt_gpio_in_buf[17] O
+mgmt_gpio_in_buf[1] O
+mgmt_gpio_in_buf[2] O
+mgmt_gpio_in_buf[3] O
+mgmt_gpio_in_buf[4] O
+mgmt_gpio_in_buf[5] O
+mgmt_gpio_in_buf[6] O
+mgmt_gpio_in_buf[7] O
+mgmt_gpio_in_buf[8] O
+mgmt_gpio_in_buf[9] O
+mgmt_gpio_oeb[0] I
+mgmt_gpio_oeb[1] I
+mgmt_gpio_oeb_buf[0] O
+mgmt_gpio_oeb_buf[1] O
+mgmt_gpio_out[0] I
+mgmt_gpio_out[10] I
+mgmt_gpio_out[11] I
+mgmt_gpio_out[12] I
+mgmt_gpio_out[13] I
+mgmt_gpio_out[14] I
+mgmt_gpio_out[15] I
+mgmt_gpio_out[16] I
+mgmt_gpio_out[17] I
+mgmt_gpio_out[1] I
+mgmt_gpio_out[2] I
+mgmt_gpio_out[3] I
+mgmt_gpio_out[4] I
+mgmt_gpio_out[5] I
+mgmt_gpio_out[6] I
+mgmt_gpio_out[7] I
+mgmt_gpio_out[8] I
+mgmt_gpio_out[9] I
+mgmt_gpio_out_buf[0] O
+mgmt_gpio_out_buf[10] O
+mgmt_gpio_out_buf[11] O
+mgmt_gpio_out_buf[12] O
+mgmt_gpio_out_buf[13] O
+mgmt_gpio_out_buf[14] O
+mgmt_gpio_out_buf[15] O
+mgmt_gpio_out_buf[16] O
+mgmt_gpio_out_buf[17] O
+mgmt_gpio_out_buf[1] O
+mgmt_gpio_out_buf[2] O
+mgmt_gpio_out_buf[3] O
+mgmt_gpio_out_buf[4] O
+mgmt_gpio_out_buf[5] O
+mgmt_gpio_out_buf[6] O
+mgmt_gpio_out_buf[7] O
+mgmt_gpio_out_buf[8] O
+mgmt_gpio_out_buf[9] O
+
+*D_NET *3 0.00134521
+*CONN
+*P mgmt_gpio_in[0] I
+*I *129:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *91:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_in[0] 0.000455857
+2 *129:I 0.000116052
+3 *91:I 0
+4 *3:7 0.000571909
+5 *129:I *13:12 0
+6 *3:7 *12:5 0.000201389
+7 *3:7 *13:12 0
+*RES
+1 mgmt_gpio_in[0] *3:7 4.635 
+2 *3:7 *91:I 4.5 
+3 *3:7 *129:I 5.76 
+*END
+
+*D_NET *4 0.00615091
+*CONN
+*P mgmt_gpio_in[10] I
+*I *102:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *140:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[10] 0.000658408
+2 *102:I 0.000131146
+3 *140:I 0
+4 *4:8 0.000789553
+5 *102:I mgmt_gpio_in_buf[15] 0.00118123
+6 *4:8 mgmt_gpio_in_buf[10] 0.000184127
+7 *4:8 mgmt_gpio_in_buf[11] 0.00084136
+8 *4:8 mgmt_gpio_in_buf[13] 5.59528e-05
+9 *4:8 mgmt_gpio_in_buf[15] 0.000310849
+10 *4:8 mgmt_gpio_in_buf[9] 0.000589207
+11 *4:8 *95:I 0
+12 *4:8 *97:I 0.000675133
+13 *4:8 *5:8 0.000183488
+14 *4:8 *6:8 0
+15 *4:8 *20:8 0.000550464
+*RES
+1 mgmt_gpio_in[10] *4:8 17.415 
+2 *4:8 *140:I 9 
+3 *4:8 *102:I 10.98 
+*END
+
+*D_NET *5 0.00165246
+*CONN
+*P mgmt_gpio_in[11] I
+*I *103:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *141:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[11] 0.000331538
+2 *103:I 0.000191064
+3 *141:I 9.66299e-06
+4 *5:8 0.000532266
+5 *103:I mgmt_gpio_oeb_buf[0] 0
+6 *141:I *7:12 3.68254e-05
+7 *141:I *8:8 0.000184127
+8 *5:8 mgmt_gpio_oeb_buf[0] 0
+9 *5:8 *6:8 0.000183488
+10 *4:8 *5:8 0.000183488
+*RES
+1 mgmt_gpio_in[11] *5:8 8.415 
+2 *5:8 *141:I 9.27 
+3 *5:8 *103:I 10.71 
+*END
+
+*D_NET *6 0.00584617
+*CONN
+*P mgmt_gpio_in[12] I
+*I *104:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *142:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[12] 0.0004264
+2 *104:I 0.000362414
+3 *142:I 3.39856e-05
+4 *6:8 0.000822799
+5 *104:I *106:I 0
+6 *104:I *8:8 0
+7 *104:I *11:8 0
+8 *104:I *52:11 0.00042963
+9 *104:I *55:14 0.000261113
+10 *142:I *144:I 8.59041e-05
+11 *142:I *7:12 4.83334e-05
+12 *6:8 mgmt_gpio_in_buf[11] 0.000438581
+13 *6:8 mgmt_gpio_in_buf[15] 0.00214815
+14 *6:8 *100:I 0.000154129
+15 *6:8 *7:12 0.00043259
+16 *6:8 *8:8 1.86509e-05
+17 *4:8 *6:8 0
+18 *5:8 *6:8 0.000183488
+*RES
+1 mgmt_gpio_in[12] *6:8 13.095 
+2 *6:8 *142:I 9.63 
+3 *6:8 *104:I 12.87 
+*END
+
+*D_NET *7 0.00360178
+*CONN
+*P mgmt_gpio_in[13] I
+*I *105:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *143:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[13] 0.000802215
+2 *105:I 0
+3 *143:I 0.000139544
+4 *7:12 0.000941758
+5 *143:I *17:12 0
+6 *7:12 mgmt_gpio_in_buf[15] 0.000283096
+7 *7:12 *97:I 0
+8 *7:12 *100:I 0
+9 *7:12 *144:I 0
+10 *7:12 *8:8 0.000917424
+11 *7:12 *20:8 0
+12 *141:I *7:12 3.68254e-05
+13 *142:I *7:12 4.83334e-05
+14 *6:8 *7:12 0.00043259
+*RES
+1 mgmt_gpio_in[13] *7:12 15.615 
+2 *7:12 *143:I 10.17 
+3 *7:12 *105:I 9 
+*END
+
+*D_NET *8 0.00416958
+*CONN
+*P mgmt_gpio_in[14] I
+*I *106:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *144:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[14] 0.000365101
+2 *106:I 0.000126419
+3 *144:I 0.000211591
+4 *8:8 0.000703111
+5 *106:I mgmt_gpio_out_buf[2] 0
+6 *106:I mgmt_gpio_out_buf[4] 0.000163195
+7 *106:I *11:8 3.68254e-05
+8 *106:I *52:11 6.90477e-06
+9 *106:I *55:14 0.000117847
+10 *144:I mgmt_gpio_in_buf[14] 0
+11 *144:I *149:I 0.000552381
+12 *144:I *10:12 0.000214815
+13 *8:8 mgmt_gpio_out_buf[4] 0.000117863
+14 *8:8 *100:I 2.07232e-05
+15 *8:8 *149:I 0
+16 *8:8 *9:5 0.000326698
+17 *8:8 *10:12 0
+18 *104:I *106:I 0
+19 *104:I *8:8 0
+20 *141:I *8:8 0.000184127
+21 *142:I *144:I 8.59041e-05
+22 *6:8 *8:8 1.86509e-05
+23 *7:12 *144:I 0
+24 *7:12 *8:8 0.000917424
+*RES
+1 mgmt_gpio_in[14] *8:8 11.115 
+2 *8:8 *144:I 11.97 
+3 *8:8 *106:I 10.98 
+*END
+
+*D_NET *9 0.00261251
+*CONN
+*P mgmt_gpio_in[15] I
+*I *145:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *107:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_in[15] 0.000182353
+2 *145:I 0
+3 *107:I 0.00014107
+4 *9:5 0.000323422
+5 *107:I mgmt_gpio_oeb_buf[0] 0.00142991
+6 *107:I mgmt_gpio_out_buf[4] 0
+7 *9:5 *10:12 0.000209061
+8 *8:8 *9:5 0.000326698
+*RES
+1 mgmt_gpio_in[15] *9:5 3.285 
+2 *9:5 *107:I 15.57 
+3 *9:5 *145:I 4.5 
+*END
+
+*D_NET *10 0.0100773
+*CONN
+*P mgmt_gpio_in[16] I
+*I *108:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *146:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[16] 0.000680675
+2 *108:I 0.000109875
+3 *146:I 8.40683e-05
+4 *10:12 0.000874618
+5 *108:I *109:I 0.000683868
+6 *108:I *147:I 6.90477e-06
+7 *108:I *11:8 0.000497358
+8 *108:I *43:11 0.000248679
+9 *108:I *52:11 0
+10 *108:I *53:11 0.000717517
+11 *108:I *54:11 0.00153439
+12 *146:I mgmt_gpio_in_buf[17] 6.13757e-06
+13 *146:I *43:11 0.000511465
+14 *146:I *52:11 0.000593299
+15 *10:12 *149:I 0.000233228
+16 *10:12 *11:8 0.00276776
+17 *10:12 *43:11 0.000103616
+18 *10:12 *52:11 0
+19 *144:I *10:12 0.000214815
+20 *8:8 *10:12 0
+21 *9:5 *10:12 0.000209061
+*RES
+1 mgmt_gpio_in[16] *10:12 16.155 
+2 *10:12 *146:I 11.61 
+3 *10:12 *108:I 12.96 
+*END
+
+*D_NET *11 0.00660638
+*CONN
+*P mgmt_gpio_in[17] I
+*I *109:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *147:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[17] 0.00076316
+2 *109:I 8.11126e-05
+3 *147:I 1.86734e-05
+4 *11:8 0.000862946
+5 *109:I *53:11 0.000165786
+6 *109:I *54:11 0.000435189
+7 *147:I *52:11 6.13758e-05
+8 *147:I *54:11 6.13757e-06
+9 *11:8 mgmt_gpio_out_buf[0] 0.000219291
+10 *11:8 mgmt_gpio_out_buf[1] 0
+11 *11:8 *52:11 0
+12 *104:I *11:8 0
+13 *106:I *11:8 3.68254e-05
+14 *108:I *109:I 0.000683868
+15 *108:I *147:I 6.90477e-06
+16 *108:I *11:8 0.000497358
+17 *10:12 *11:8 0.00276776
+*RES
+1 mgmt_gpio_in[17] *11:8 15.795 
+2 *11:8 *147:I 9.27 
+3 *11:8 *109:I 10.71 
+*END
+
+*D_NET *12 0.000731999
+*CONN
+*P mgmt_gpio_in[1] I
+*I *130:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *92:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_in[1] 7.53396e-05
+2 *130:I 4.46354e-05
+3 *92:I 4.46354e-05
+4 *12:5 0.00016461
+5 *12:5 *13:12 0.000201389
+6 *3:7 *12:5 0.000201389
+*RES
+1 mgmt_gpio_in[1] *12:5 2.025 
+2 *12:5 *92:I 4.95 
+3 *12:5 *130:I 4.95 
+*END
+
+*D_NET *13 0.00592884
+*CONN
+*P mgmt_gpio_in[2] I
+*I *93:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *131:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[2] 0.00133867
+2 *93:I 0.000380203
+3 *131:I 0
+4 *13:12 0.00171887
+5 *93:I mgmt_gpio_in_buf[10] 0.000163669
+6 *93:I mgmt_gpio_in_buf[9] 0.000102293
+7 *93:I *40:5 0
+8 *13:12 mgmt_gpio_in_buf[0] 0
+9 *13:12 mgmt_gpio_in_buf[13] 0
+10 *13:12 mgmt_gpio_in_buf[1] 0.000600715
+11 *13:12 mgmt_gpio_in_buf[3] 0.000331429
+12 *13:12 mgmt_gpio_in_buf[4] 0
+13 *13:12 *14:11 0.00109159
+14 *13:12 *15:12 0
+15 *13:12 *40:5 0
+16 *129:I *13:12 0
+17 *3:7 *13:12 0
+18 *12:5 *13:12 0.000201389
+*RES
+1 mgmt_gpio_in[2] *13:12 22.455 
+2 *13:12 *131:I 9 
+3 *13:12 *93:I 12.33 
+*END
+
+*D_NET *14 0.008226
+*CONN
+*P mgmt_gpio_in[3] I
+*I *132:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *94:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_in[3] 0.000807985
+2 *132:I 1.55042e-05
+3 *94:I 0.000119764
+4 *14:11 0.000943253
+5 *94:I mgmt_gpio_in_buf[13] 0.00118123
+6 *94:I mgmt_gpio_in_buf[8] 3.41934e-05
+7 *132:I mgmt_gpio_in_buf[6] 3.58025e-05
+8 *132:I mgmt_gpio_in_buf[7] 0.000306879
+9 *14:11 mgmt_gpio_in_buf[1] 0.000331429
+10 *14:11 mgmt_gpio_in_buf[6] 0.000241667
+11 *14:11 mgmt_gpio_in_buf[7] 0.00165714
+12 *14:11 *95:I 0.00012434
+13 *14:11 *126:I 0.000102293
+14 *14:11 *15:12 0.00121117
+15 *14:11 *17:12 2.17594e-05
+16 *13:12 *14:11 0.00109159
+*RES
+1 mgmt_gpio_in[3] *14:11 23.445 
+2 *14:11 *94:I 15.21 
+3 *14:11 *132:I 4.95 
+*END
+
+*D_NET *15 0.00942857
+*CONN
+*P mgmt_gpio_in[4] I
+*I *95:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *133:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[4] 0.000473426
+2 *95:I 0.000373538
+3 *133:I 0
+4 *15:12 0.000846964
+5 *95:I mgmt_gpio_in_buf[8] 4.04104e-05
+6 *95:I *97:I 0
+7 *95:I *17:12 0
+8 *15:12 mgmt_gpio_in_buf[13] 0.00165714
+9 *15:12 mgmt_gpio_in_buf[1] 0.00325291
+10 *15:12 mgmt_gpio_in_buf[8] 4.66274e-05
+11 *15:12 *16:11 0.00140204
+12 *4:8 *95:I 0
+13 *13:12 *15:12 0
+14 *14:11 *95:I 0.00012434
+15 *14:11 *15:12 0.00121117
+*RES
+1 mgmt_gpio_in[4] *15:12 15.975 
+2 *15:12 *133:I 9 
+3 *15:12 *95:I 12.33 
+*END
+
+*D_NET *16 0.00979084
+*CONN
+*P mgmt_gpio_in[5] I
+*I *96:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *134:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[5] 0.000548982
+2 *96:I 8.4668e-05
+3 *134:I 0
+4 *16:11 0.00063365
+5 *96:I mgmt_gpio_in_buf[8] 6.90477e-05
+6 *96:I mgmt_gpio_in_buf[9] 0.000675133
+7 *16:11 mgmt_gpio_in_buf[13] 0.00345574
+8 *16:11 mgmt_gpio_in_buf[4] 0.000122751
+9 *16:11 mgmt_gpio_in_buf[6] 0.00108431
+10 *16:11 mgmt_gpio_in_buf[8] 8.5926e-05
+11 *16:11 mgmt_gpio_in_buf[9] 7.36509e-05
+12 *16:11 *17:12 0.000954009
+13 *16:11 *40:5 0.000600936
+14 *15:12 *16:11 0.00140204
+*RES
+1 mgmt_gpio_in[5] *16:11 25.065 
+2 *16:11 *134:I 4.5 
+3 *16:11 *96:I 5.94 
+*END
+
+*D_NET *17 0.00523919
+*CONN
+*P mgmt_gpio_in[6] I
+*I *97:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *135:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[6] 0.000548994
+2 *97:I 0.000188529
+3 *135:I 0
+4 *17:12 0.000737523
+5 *97:I mgmt_gpio_in_buf[9] 0.000225045
+6 *17:12 mgmt_gpio_in_buf[6] 0.000184127
+7 *17:12 mgmt_gpio_in_buf[7] 0.000241667
+8 *17:12 *136:I 0.00104339
+9 *17:12 *18:7 0.000419018
+10 *17:12 *19:9 0
+11 *95:I *97:I 0
+12 *95:I *17:12 0
+13 *143:I *17:12 0
+14 *4:8 *97:I 0.000675133
+15 *7:12 *97:I 0
+16 *14:11 *17:12 2.17594e-05
+17 *16:11 *17:12 0.000954009
+*RES
+1 mgmt_gpio_in[6] *17:12 14.895 
+2 *17:12 *135:I 9 
+3 *17:12 *97:I 11.34 
+*END
+
+*D_NET *18 0.0030682
+*CONN
+*P mgmt_gpio_in[7] I
+*I *98:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *136:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[7] 0.000165281
+2 *98:I 0.000166142
+3 *136:I 0.000192919
+4 *18:7 0.000524342
+5 *136:I mgmt_gpio_in_buf[7] 0
+6 *136:I *19:9 0
+7 *18:7 *19:9 0.000557113
+8 *17:12 *136:I 0.00104339
+9 *17:12 *18:7 0.000419018
+*RES
+1 mgmt_gpio_in[7] *18:7 8.865 
+2 *18:7 *136:I 11.34 
+3 *18:7 *98:I 10.35 
+*END
+
+*D_NET *19 0.00433495
+*CONN
+*P mgmt_gpio_in[8] I
+*I *99:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *137:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[8] 0.000572059
+2 *99:I 8.8608e-05
+3 *137:I 0.000171884
+4 *19:9 0.00083255
+5 *137:I mgmt_gpio_in_buf[7] 0.00116614
+6 *137:I mgmt_gpio_in_buf[8] 3.68254e-05
+7 *137:I mgmt_gpio_in_buf[9] 0
+8 *19:9 mgmt_gpio_in_buf[7] 0.000322223
+9 *19:9 mgmt_gpio_in_buf[9] 0.000116614
+10 *19:9 *20:8 0.000470931
+11 *136:I *19:9 0
+12 *17:12 *19:9 0
+13 *18:7 *19:9 0.000557113
+*RES
+1 mgmt_gpio_in[8] *19:9 9.585 
+2 *19:9 *137:I 6.84 
+3 *19:9 *99:I 5.31 
+*END
+
+*D_NET *20 0.00269425
+*CONN
+*P mgmt_gpio_in[9] I
+*I *100:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *138:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in[9] 0.000498261
+2 *100:I 0.000149353
+3 *138:I 0
+4 *20:8 0.000647614
+5 *100:I mgmt_gpio_out_buf[4] 1.86509e-05
+6 *20:8 mgmt_gpio_in_buf[9] 0.000184127
+7 *4:8 *20:8 0.000550464
+8 *6:8 *100:I 0.000154129
+9 *7:12 *100:I 0
+10 *7:12 *20:8 0
+11 *8:8 *100:I 2.07232e-05
+12 *19:9 *20:8 0.000470931
+*RES
+1 mgmt_gpio_in[9] *20:8 12.375 
+2 *20:8 *138:I 9 
+3 *20:8 *100:I 10.71 
+*END
+
+*D_NET *21 0.003847
+*CONN
+*P mgmt_gpio_in_buf[0] O
+*I *129:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[0] 0.00137729
+2 *129:Z 0.00137729
+3 mgmt_gpio_in_buf[0] mgmt_gpio_in_buf[1] 0.00100695
+4 mgmt_gpio_in_buf[0] mgmt_gpio_in_buf[7] 0
+5 mgmt_gpio_in_buf[0] *126:I 3.41878e-05
+6 mgmt_gpio_in_buf[0] *39:5 5.12901e-05
+7 *13:12 mgmt_gpio_in_buf[0] 0
+*RES
+1 *129:Z mgmt_gpio_in_buf[0] 28.755 
+*END
+
+*D_NET *22 0.00292529
+*CONN
+*P mgmt_gpio_in_buf[10] O
+*I *140:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[10] 0.000256738
+2 *140:Z 0.000256738
+3 mgmt_gpio_in_buf[10] mgmt_gpio_in_buf[11] 0.000743797
+4 mgmt_gpio_in_buf[10] mgmt_gpio_in_buf[9] 0.000460958
+5 mgmt_gpio_in_buf[10] *89:I 0.000675133
+6 mgmt_gpio_in_buf[10] *127:I 0.000184127
+7 *93:I mgmt_gpio_in_buf[10] 0.000163669
+8 *4:8 mgmt_gpio_in_buf[10] 0.000184127
+*RES
+1 *140:Z mgmt_gpio_in_buf[10] 11.205 
+*END
+
+*D_NET *23 0.0043715
+*CONN
+*P mgmt_gpio_in_buf[11] O
+*I *141:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[11] 0.000633454
+2 *141:Z 0.000633454
+3 mgmt_gpio_in_buf[11] mgmt_gpio_in_buf[12] 0.000971144
+4 mgmt_gpio_in_buf[11] mgmt_gpio_in_buf[15] 4.83334e-05
+5 mgmt_gpio_in_buf[11] *127:I 6.13758e-05
+6 mgmt_gpio_in_buf[10] mgmt_gpio_in_buf[11] 0.000743797
+7 *4:8 mgmt_gpio_in_buf[11] 0.00084136
+8 *6:8 mgmt_gpio_in_buf[11] 0.000438581
+*RES
+1 *141:Z mgmt_gpio_in_buf[11] 19.305 
+*END
+
+*D_NET *24 0.00696913
+*CONN
+*P mgmt_gpio_in_buf[12] O
+*I *142:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[12] 0.000338038
+2 *142:Z 0.000338038
+3 mgmt_gpio_in_buf[12] mgmt_gpio_in_buf[13] 0.00265514
+4 mgmt_gpio_in_buf[12] mgmt_gpio_in_buf[14] 2.76191e-05
+5 mgmt_gpio_in_buf[12] mgmt_gpio_in_buf[15] 0.00263916
+6 mgmt_gpio_in_buf[11] mgmt_gpio_in_buf[12] 0.000971144
+*RES
+1 *142:Z mgmt_gpio_in_buf[12] 14.265 
+*END
+
+*D_NET *25 0.01155
+*CONN
+*P mgmt_gpio_in_buf[13] O
+*I *143:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[13] 0.00091859
+2 *143:Z 0.00091859
+3 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[14] 0.000189114
+4 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[15] 6.99409e-06
+5 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[4] 0.000511465
+6 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[8] 0
+7 mgmt_gpio_in_buf[13] *127:I 0
+8 mgmt_gpio_in_buf[13] *40:5 0
+9 mgmt_gpio_in_buf[12] mgmt_gpio_in_buf[13] 0.00265514
+10 *94:I mgmt_gpio_in_buf[13] 0.00118123
+11 *4:8 mgmt_gpio_in_buf[13] 5.59528e-05
+12 *13:12 mgmt_gpio_in_buf[13] 0
+13 *15:12 mgmt_gpio_in_buf[13] 0.00165714
+14 *16:11 mgmt_gpio_in_buf[13] 0.00345574
+*RES
+1 *143:Z mgmt_gpio_in_buf[13] 29.565 
+*END
+
+*D_NET *26 0.00237965
+*CONN
+*P mgmt_gpio_in_buf[14] O
+*I *144:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[14] 0.000714037
+2 *144:Z 0.000714037
+3 mgmt_gpio_in_buf[14] mgmt_gpio_in_buf[15] 0.000734847
+4 mgmt_gpio_in_buf[12] mgmt_gpio_in_buf[14] 2.76191e-05
+5 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[14] 0.000189114
+6 *144:I mgmt_gpio_in_buf[14] 0
+*RES
+1 *144:Z mgmt_gpio_in_buf[14] 13.905 
+*END
+
+*D_NET *27 0.00942244
+*CONN
+*P mgmt_gpio_in_buf[15] O
+*I *145:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[15] 0.000794952
+2 *145:Z 0.000794952
+3 mgmt_gpio_in_buf[15] mgmt_gpio_in_buf[16] 0.000443056
+4 mgmt_gpio_in_buf[15] mgmt_gpio_in_buf[17] 0
+5 mgmt_gpio_in_buf[15] mgmt_gpio_oeb_buf[1] 3.68254e-05
+6 mgmt_gpio_in_buf[11] mgmt_gpio_in_buf[15] 4.83334e-05
+7 mgmt_gpio_in_buf[12] mgmt_gpio_in_buf[15] 0.00263916
+8 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[15] 6.99409e-06
+9 mgmt_gpio_in_buf[14] mgmt_gpio_in_buf[15] 0.000734847
+10 *102:I mgmt_gpio_in_buf[15] 0.00118123
+11 *4:8 mgmt_gpio_in_buf[15] 0.000310849
+12 *6:8 mgmt_gpio_in_buf[15] 0.00214815
+13 *7:12 mgmt_gpio_in_buf[15] 0.000283096
+*RES
+1 *145:Z mgmt_gpio_in_buf[15] 29.205 
+*END
+
+*D_NET *28 0.00147689
+*CONN
+*P mgmt_gpio_in_buf[16] O
+*I *146:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[16] 0.000189897
+2 *146:Z 0.000189897
+3 mgmt_gpio_in_buf[16] mgmt_gpio_in_buf[17] 0.000469908
+4 mgmt_gpio_in_buf[16] mgmt_gpio_oeb_buf[1] 0.000184127
+5 mgmt_gpio_in_buf[15] mgmt_gpio_in_buf[16] 0.000443056
+*RES
+1 *146:Z mgmt_gpio_in_buf[16] 9.225 
+*END
+
+*D_NET *29 0.00198658
+*CONN
+*P mgmt_gpio_in_buf[17] O
+*I *147:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[17] 0.000403957
+2 *147:Z 0.000403957
+3 mgmt_gpio_in_buf[17] *43:11 0.000702625
+4 mgmt_gpio_in_buf[15] mgmt_gpio_in_buf[17] 0
+5 mgmt_gpio_in_buf[16] mgmt_gpio_in_buf[17] 0.000469908
+6 *146:I mgmt_gpio_in_buf[17] 6.13757e-06
+*RES
+1 *147:Z mgmt_gpio_in_buf[17] 11.745 
+*END
+
+*D_NET *30 0.00733368
+*CONN
+*P mgmt_gpio_in_buf[1] O
+*I *130:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[1] 0.00086406
+2 *130:Z 0.00086406
+3 mgmt_gpio_in_buf[1] mgmt_gpio_in_buf[2] 0.000219291
+4 mgmt_gpio_in_buf[1] mgmt_gpio_in_buf[3] 0
+5 mgmt_gpio_in_buf[1] mgmt_gpio_in_buf[7] 0.000132888
+6 mgmt_gpio_in_buf[1] *126:I 6.13757e-05
+7 mgmt_gpio_in_buf[0] mgmt_gpio_in_buf[1] 0.00100695
+8 *13:12 mgmt_gpio_in_buf[1] 0.000600715
+9 *14:11 mgmt_gpio_in_buf[1] 0.000331429
+10 *15:12 mgmt_gpio_in_buf[1] 0.00325291
+*RES
+1 *130:Z mgmt_gpio_in_buf[1] 30.825 
+*END
+
+*D_NET *31 0.000599591
+*CONN
+*P mgmt_gpio_in_buf[2] O
+*I *131:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[2] 8.05049e-05
+2 *131:Z 8.05049e-05
+3 mgmt_gpio_in_buf[2] mgmt_gpio_in_buf[3] 0.000219291
+4 mgmt_gpio_in_buf[1] mgmt_gpio_in_buf[2] 0.000219291
+*RES
+1 *131:Z mgmt_gpio_in_buf[2] 6.705 
+*END
+
+*D_NET *32 0.00135807
+*CONN
+*P mgmt_gpio_in_buf[3] O
+*I *132:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[3] 0.000205548
+2 *132:Z 0.000205548
+3 mgmt_gpio_in_buf[3] mgmt_gpio_in_buf[4] 0.000396257
+4 mgmt_gpio_in_buf[1] mgmt_gpio_in_buf[3] 0
+5 mgmt_gpio_in_buf[2] mgmt_gpio_in_buf[3] 0.000219291
+6 *13:12 mgmt_gpio_in_buf[3] 0.000331429
+*RES
+1 *132:Z mgmt_gpio_in_buf[3] 9.225 
+*END
+
+*D_NET *33 0.00234647
+*CONN
+*P mgmt_gpio_in_buf[4] O
+*I *133:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[4] 0.000412558
+2 *133:Z 0.000412558
+3 mgmt_gpio_in_buf[4] mgmt_gpio_in_buf[5] 0.000470164
+4 mgmt_gpio_in_buf[4] mgmt_gpio_in_buf[6] 2.07143e-05
+5 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[4] 0.000511465
+6 mgmt_gpio_in_buf[3] mgmt_gpio_in_buf[4] 0.000396257
+7 *13:12 mgmt_gpio_in_buf[4] 0
+8 *16:11 mgmt_gpio_in_buf[4] 0.000122751
+*RES
+1 *133:Z mgmt_gpio_in_buf[4] 12.105 
+*END
+
+*D_NET *34 0.0013509
+*CONN
+*P mgmt_gpio_in_buf[5] O
+*I *134:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[5] 0.000129333
+2 *134:Z 0.000129333
+3 mgmt_gpio_in_buf[5] mgmt_gpio_in_buf[6] 0.000622069
+4 mgmt_gpio_in_buf[4] mgmt_gpio_in_buf[5] 0.000470164
+*RES
+1 *134:Z mgmt_gpio_in_buf[5] 8.325 
+*END
+
+*D_NET *35 0.00347106
+*CONN
+*P mgmt_gpio_in_buf[6] O
+*I *135:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[6] 0.000449196
+2 *135:Z 0.000449196
+3 mgmt_gpio_in_buf[6] mgmt_gpio_in_buf[7] 0.000383982
+4 mgmt_gpio_in_buf[4] mgmt_gpio_in_buf[6] 2.07143e-05
+5 mgmt_gpio_in_buf[5] mgmt_gpio_in_buf[6] 0.000622069
+6 *132:I mgmt_gpio_in_buf[6] 3.58025e-05
+7 *14:11 mgmt_gpio_in_buf[6] 0.000241667
+8 *16:11 mgmt_gpio_in_buf[6] 0.00108431
+9 *17:12 mgmt_gpio_in_buf[6] 0.000184127
+*RES
+1 *135:Z mgmt_gpio_in_buf[6] 13.905 
+*END
+
+*D_NET *36 0.00671118
+*CONN
+*P mgmt_gpio_in_buf[7] O
+*I *136:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[7] 0.000904826
+2 *136:Z 0.000904826
+3 mgmt_gpio_in_buf[7] mgmt_gpio_in_buf[8] 0.000690605
+4 mgmt_gpio_in_buf[0] mgmt_gpio_in_buf[7] 0
+5 mgmt_gpio_in_buf[1] mgmt_gpio_in_buf[7] 0.000132888
+6 mgmt_gpio_in_buf[6] mgmt_gpio_in_buf[7] 0.000383982
+7 *132:I mgmt_gpio_in_buf[7] 0.000306879
+8 *136:I mgmt_gpio_in_buf[7] 0
+9 *137:I mgmt_gpio_in_buf[7] 0.00116614
+10 *14:11 mgmt_gpio_in_buf[7] 0.00165714
+11 *17:12 mgmt_gpio_in_buf[7] 0.000241667
+12 *19:9 mgmt_gpio_in_buf[7] 0.000322223
+*RES
+1 *136:Z mgmt_gpio_in_buf[7] 28.395 
+*END
+
+*D_NET *37 0.00256371
+*CONN
+*P mgmt_gpio_in_buf[8] O
+*I *137:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[8] 0.000620019
+2 *137:Z 0.000620019
+3 mgmt_gpio_in_buf[8] mgmt_gpio_in_buf[9] 0.000320033
+4 mgmt_gpio_in_buf[13] mgmt_gpio_in_buf[8] 0
+5 mgmt_gpio_in_buf[7] mgmt_gpio_in_buf[8] 0.000690605
+6 *94:I mgmt_gpio_in_buf[8] 3.41934e-05
+7 *95:I mgmt_gpio_in_buf[8] 4.04104e-05
+8 *96:I mgmt_gpio_in_buf[8] 6.90477e-05
+9 *137:I mgmt_gpio_in_buf[8] 3.68254e-05
+10 *15:12 mgmt_gpio_in_buf[8] 4.66274e-05
+11 *16:11 mgmt_gpio_in_buf[8] 8.5926e-05
+*RES
+1 *137:Z mgmt_gpio_in_buf[8] 22.635 
+*END
+
+*D_NET *38 0.00424391
+*CONN
+*P mgmt_gpio_in_buf[9] O
+*I *138:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_in_buf[9] 0.000680913
+2 *138:Z 0.000680913
+3 mgmt_gpio_in_buf[9] *89:I 0.000135027
+4 mgmt_gpio_in_buf[10] mgmt_gpio_in_buf[9] 0.000460958
+5 mgmt_gpio_in_buf[8] mgmt_gpio_in_buf[9] 0.000320033
+6 *93:I mgmt_gpio_in_buf[9] 0.000102293
+7 *96:I mgmt_gpio_in_buf[9] 0.000675133
+8 *97:I mgmt_gpio_in_buf[9] 0.000225045
+9 *137:I mgmt_gpio_in_buf[9] 0
+10 *4:8 mgmt_gpio_in_buf[9] 0.000589207
+11 *16:11 mgmt_gpio_in_buf[9] 7.36509e-05
+12 *19:9 mgmt_gpio_in_buf[9] 0.000116614
+13 *20:8 mgmt_gpio_in_buf[9] 0.000184127
+*RES
+1 *138:Z mgmt_gpio_in_buf[9] 16.245 
+*END
+
+*D_NET *39 0.000737163
+*CONN
+*P mgmt_gpio_oeb[0] I
+*I *126:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *88:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_oeb[0] 0.000122299
+2 *126:I 0.000121709
+3 *88:I 0
+4 *39:5 0.000244008
+5 mgmt_gpio_in_buf[0] *126:I 3.41878e-05
+6 mgmt_gpio_in_buf[0] *39:5 5.12901e-05
+7 mgmt_gpio_in_buf[1] *126:I 6.13757e-05
+8 *14:11 *126:I 0.000102293
+*RES
+1 mgmt_gpio_oeb[0] *39:5 1.485 
+2 *39:5 *88:I 9 
+3 *39:5 *126:I 10.44 
+*END
+
+*D_NET *40 0.00329154
+*CONN
+*P mgmt_gpio_oeb[1] I
+*I *127:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *89:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_oeb[1] 0.00071654
+2 *127:I 6.87646e-05
+3 *89:I 3.21674e-05
+4 *40:5 0.000817472
+5 mgmt_gpio_in_buf[10] *89:I 0.000675133
+6 mgmt_gpio_in_buf[10] *127:I 0.000184127
+7 mgmt_gpio_in_buf[11] *127:I 6.13758e-05
+8 mgmt_gpio_in_buf[13] *127:I 0
+9 mgmt_gpio_in_buf[13] *40:5 0
+10 mgmt_gpio_in_buf[9] *89:I 0.000135027
+11 *93:I *40:5 0
+12 *13:12 *40:5 0
+13 *16:11 *40:5 0.000600936
+*RES
+1 mgmt_gpio_oeb[1] *40:5 7.065 
+2 *40:5 *89:I 9.99 
+3 *40:5 *127:I 9.72 
+*END
+
+*D_NET *41 0.00607576
+*CONN
+*P mgmt_gpio_oeb_buf[0] O
+*I *126:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_oeb_buf[0] 0.00190561
+2 *126:Z 0.00190561
+3 mgmt_gpio_oeb_buf[0] mgmt_gpio_out_buf[15] 0.000211377
+4 mgmt_gpio_oeb_buf[0] mgmt_gpio_out_buf[16] 0
+5 mgmt_gpio_oeb_buf[0] mgmt_gpio_out_buf[4] 0
+6 mgmt_gpio_oeb_buf[0] *81:I 0.000125894
+7 mgmt_gpio_oeb_buf[0] *90:I 0
+8 mgmt_gpio_oeb_buf[0] *112:I 0.000425862
+9 mgmt_gpio_oeb_buf[0] *45:12 5.59527e-05
+10 mgmt_gpio_oeb_buf[0] *56:16 1.55424e-05
+11 *103:I mgmt_gpio_oeb_buf[0] 0
+12 *107:I mgmt_gpio_oeb_buf[0] 0.00142991
+13 *5:8 mgmt_gpio_oeb_buf[0] 0
+*RES
+1 *126:Z mgmt_gpio_oeb_buf[0] 28.665 
+*END
+
+*D_NET *42 0.00496339
+*CONN
+*P mgmt_gpio_oeb_buf[1] O
+*I *127:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_oeb_buf[1] 0.00123727
+2 *127:Z 0.00123727
+3 mgmt_gpio_oeb_buf[1] mgmt_gpio_out_buf[14] 0.000207232
+4 mgmt_gpio_oeb_buf[1] mgmt_gpio_out_buf[17] 0.000879442
+5 mgmt_gpio_oeb_buf[1] *83:I 0.00118123
+6 mgmt_gpio_oeb_buf[1] *51:11 0
+7 mgmt_gpio_in_buf[15] mgmt_gpio_oeb_buf[1] 3.68254e-05
+8 mgmt_gpio_in_buf[16] mgmt_gpio_oeb_buf[1] 0.000184127
+*RES
+1 *127:Z mgmt_gpio_oeb_buf[1] 23.535 
+*END
+
+*D_NET *43 0.00935032
+*CONN
+*P mgmt_gpio_out[0] I
+*I *79:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *117:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[0] 0.00094184
+2 *79:I 0.000144416
+3 *117:I 6.56075e-06
+4 *43:11 0.00109282
+5 *79:I mgmt_gpio_out_buf[6] 6.13758e-05
+6 *79:I mgmt_gpio_out_buf[7] 6.13758e-05
+7 *117:I mgmt_gpio_out_buf[5] 6.13758e-05
+8 *117:I mgmt_gpio_out_buf[6] 6.13758e-05
+9 *43:11 mgmt_gpio_out_buf[4] 0
+10 *43:11 mgmt_gpio_out_buf[5] 0.000204586
+11 *43:11 mgmt_gpio_out_buf[6] 0.000638308
+12 *43:11 *101:I 0.000392805
+13 *43:11 *110:I 0.000797884
+14 *43:11 *52:11 0.000478859
+15 *43:11 *53:11 0.00152811
+16 *43:11 *54:11 0.000711399
+17 *43:11 *56:16 0.000600849
+18 mgmt_gpio_in_buf[17] *43:11 0.000702625
+19 *108:I *43:11 0.000248679
+20 *146:I *43:11 0.000511465
+21 *10:12 *43:11 0.000103616
+*RES
+1 mgmt_gpio_out[0] *43:11 27.945 
+2 *43:11 *117:I 4.77 
+3 *43:11 *79:I 14.7874 
+*END
+
+*D_NET *44 0.00396643
+*CONN
+*P mgmt_gpio_out[10] I
+*I *80:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *118:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[10] 0.000644615
+2 *80:I 0.000170602
+3 *118:I 0
+4 *44:12 0.000815216
+5 *80:I *46:11 7.25313e-05
+6 *44:12 mgmt_gpio_out_buf[10] 0.000184127
+7 *44:12 mgmt_gpio_out_buf[8] 0
+8 *44:12 mgmt_gpio_out_buf[9] 0.000634216
+9 *44:12 *115:I 0
+10 *44:12 *153:I 0.000306879
+11 *44:12 *45:12 0.000464282
+12 *44:12 *46:11 9.97306e-05
+13 *44:12 *59:8 0
+14 *44:12 *60:12 0.000574231
+*RES
+1 mgmt_gpio_out[10] *44:12 14.535 
+2 *44:12 *118:I 9 
+3 *44:12 *80:I 10.71 
+*END
+
+*D_NET *45 0.009015
+*CONN
+*P mgmt_gpio_out[11] I
+*I *81:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *119:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[11] 0.000607409
+2 *81:I 0.00013579
+3 *119:I 0
+4 *45:12 0.000743199
+5 *45:12 mgmt_gpio_out_buf[10] 0.000209445
+6 *45:12 mgmt_gpio_out_buf[11] 0.000184127
+7 *45:12 mgmt_gpio_out_buf[12] 0.000197681
+8 *45:12 mgmt_gpio_out_buf[13] 0.000650583
+9 *45:12 mgmt_gpio_out_buf[14] 0.000184127
+10 *45:12 mgmt_gpio_out_buf[6] 0.00141164
+11 *45:12 mgmt_gpio_out_buf[9] 0.00362117
+12 *45:12 *112:I 0.000186509
+13 *45:12 *46:11 0.000237192
+14 mgmt_gpio_oeb_buf[0] *81:I 0.000125894
+15 mgmt_gpio_oeb_buf[0] *45:12 5.59527e-05
+16 *44:12 *45:12 0.000464282
+*RES
+1 mgmt_gpio_out[11] *45:12 18.855 
+2 *45:12 *119:I 9 
+3 *45:12 *81:I 10.71 
+*END
+
+*D_NET *46 0.00796206
+*CONN
+*P mgmt_gpio_out[12] I
+*I *82:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *120:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[12] 0.000694622
+2 *82:I 0.000108726
+3 *120:I 6.65482e-06
+4 *46:11 0.000810003
+5 *120:I mgmt_gpio_out_buf[14] 0.000184127
+6 *120:I *49:5 3.68254e-05
+7 *46:11 mgmt_gpio_out_buf[13] 0.00300741
+8 *46:11 mgmt_gpio_out_buf[14] 0.0020254
+9 *46:11 *47:11 0.000445613
+10 *46:11 *49:5 0.000233228
+11 *80:I *46:11 7.25313e-05
+12 *44:12 *46:11 9.97306e-05
+13 *45:12 *46:11 0.000237192
+*RES
+1 mgmt_gpio_out[12] *46:11 20.565 
+2 *46:11 *120:I 4.77 
+3 *46:11 *82:I 14.49 
+*END
+
+*D_NET *47 0.00308978
+*CONN
+*P mgmt_gpio_out[13] I
+*I *121:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *83:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_out[13] 0.000241171
+2 *121:I 0
+3 *83:I 7.62668e-05
+4 *47:11 0.000317438
+5 *83:I mgmt_gpio_out_buf[14] 0.000559528
+6 *83:I *51:11 3.10849e-05
+7 *47:11 mgmt_gpio_out_buf[14] 2.07143e-05
+8 *47:11 *122:I 2.07143e-05
+9 *47:11 *48:5 0.000196019
+10 *47:11 *49:5 0
+11 mgmt_gpio_oeb_buf[1] *83:I 0.00118123
+12 *46:11 *47:11 0.000445613
+*RES
+1 mgmt_gpio_out[13] *47:11 4.275 
+2 *47:11 *83:I 15.21 
+3 *47:11 *121:I 4.5 
+*END
+
+*D_NET *48 0.00101239
+*CONN
+*P mgmt_gpio_out[14] I
+*I *84:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *122:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[14] 8.50326e-05
+2 *84:I 6.50422e-05
+3 *122:I 1.07043e-05
+4 *48:5 0.000160779
+5 *84:I *51:11 0.000227955
+6 *122:I *49:5 2.68519e-05
+7 *48:5 *49:5 0.000219291
+8 *47:11 *122:I 2.07143e-05
+9 *47:11 *48:5 0.000196019
+*RES
+1 mgmt_gpio_out[14] *48:5 2.205 
+2 *48:5 *122:I 4.77 
+3 *48:5 *84:I 14.49 
+*END
+
+*D_NET *49 0.0053111
+*CONN
+*P mgmt_gpio_out[15] I
+*I *123:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *85:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_out[15] 0.00055993
+2 *123:I 9.93539e-05
+3 *85:I 0.000357025
+4 *49:5 0.00101631
+5 *85:I mgmt_gpio_out_buf[17] 6.13758e-05
+6 *85:I *50:11 3.68254e-05
+7 *123:I mgmt_gpio_out_buf[14] 0.000124286
+8 *123:I *50:11 0.000388713
+9 *49:5 mgmt_gpio_out_buf[14] 0.000680248
+10 *49:5 *50:11 0.00147084
+11 *120:I *49:5 3.68254e-05
+12 *122:I *49:5 2.68519e-05
+13 *46:11 *49:5 0.000233228
+14 *47:11 *49:5 0
+15 *48:5 *49:5 0.000219291
+*RES
+1 mgmt_gpio_out[15] *49:5 12.105 
+2 *49:5 *85:I 15.1748 
+3 *49:5 *123:I 6.48 
+*END
+
+*D_NET *50 0.00563488
+*CONN
+*P mgmt_gpio_out[16] I
+*I *86:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *124:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[16] 0.000792032
+2 *86:I 0
+3 *124:I 7.59403e-05
+4 *50:11 0.000867972
+5 *124:I mgmt_gpio_out_buf[15] 6.13758e-05
+6 *124:I mgmt_gpio_out_buf[16] 0.000724785
+7 *50:11 mgmt_gpio_out_buf[14] 0
+8 *50:11 mgmt_gpio_out_buf[15] 0.000122751
+9 *50:11 mgmt_gpio_out_buf[16] 6.13757e-05
+10 *50:11 mgmt_gpio_out_buf[17] 0.00077717
+11 *50:11 *51:11 0.000255093
+12 *85:I *50:11 3.68254e-05
+13 *123:I *50:11 0.000388713
+14 *49:5 *50:11 0.00147084
+*RES
+1 mgmt_gpio_out[16] *50:11 15.435 
+2 *50:11 *124:I 14.76 
+3 *50:11 *86:I 4.5 
+*END
+
+*D_NET *51 0.00419063
+*CONN
+*P mgmt_gpio_out[17] I
+*I *87:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *125:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[17] 0.000994544
+2 *87:I 8.09011e-05
+3 *125:I 0
+4 *51:11 0.00107545
+5 *87:I *57:13 0.00023067
+6 *87:I *58:12 0.000797884
+7 *51:11 mgmt_gpio_out_buf[14] 0.000132888
+8 *51:11 *57:13 0.000216861
+9 *51:11 *58:12 0.000147302
+10 mgmt_gpio_oeb_buf[1] *51:11 0
+11 *83:I *51:11 3.10849e-05
+12 *84:I *51:11 0.000227955
+13 *50:11 *51:11 0.000255093
+*RES
+1 mgmt_gpio_out[17] *51:11 20.205 
+2 *51:11 *125:I 4.5 
+3 *51:11 *87:I 6.12 
+*END
+
+*D_NET *52 0.00557289
+*CONN
+*P mgmt_gpio_out[1] I
+*I *128:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *90:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_out[1] 0.000812978
+2 *128:I 0
+3 *90:I 0.000303444
+4 *52:11 0.00111642
+5 *90:I mgmt_gpio_out_buf[6] 0
+6 *90:I *56:16 2.07232e-05
+7 *52:11 mgmt_gpio_out_buf[2] 0.000170062
+8 *52:11 mgmt_gpio_out_buf[3] 0.000204586
+9 *52:11 mgmt_gpio_out_buf[4] 0.000317015
+10 *52:11 *101:I 7.59525e-05
+11 *52:11 *53:11 0.000720526
+12 *52:11 *54:11 0
+13 *52:11 *55:14 0.000261113
+14 mgmt_gpio_oeb_buf[0] *90:I 0
+15 *104:I *52:11 0.00042963
+16 *106:I *52:11 6.90477e-06
+17 *108:I *52:11 0
+18 *146:I *52:11 0.000593299
+19 *147:I *52:11 6.13758e-05
+20 *10:12 *52:11 0
+21 *11:8 *52:11 0
+22 *43:11 *52:11 0.000478859
+*RES
+1 mgmt_gpio_out[1] *52:11 23.445 
+2 *52:11 *90:I 16.11 
+3 *52:11 *128:I 4.5 
+*END
+
+*D_NET *53 0.00672211
+*CONN
+*P mgmt_gpio_out[2] I
+*I *139:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *101:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_out[2] 0.000479449
+2 *139:I 0
+3 *101:I 0.000305311
+4 *53:11 0.000784759
+5 *101:I mgmt_gpio_out_buf[3] 0
+6 *101:I mgmt_gpio_out_buf[6] 0.000184127
+7 *101:I *55:14 7.59525e-05
+8 *53:11 *110:I 0.000265962
+9 *53:11 *54:11 0.000818719
+10 *53:11 *55:14 0.000207143
+11 *108:I *53:11 0.000717517
+12 *109:I *53:11 0.000165786
+13 *43:11 *101:I 0.000392805
+14 *43:11 *53:11 0.00152811
+15 *52:11 *101:I 7.59525e-05
+16 *52:11 *53:11 0.000720526
+*RES
+1 mgmt_gpio_out[2] *53:11 21.105 
+2 *53:11 *101:I 17.4365 
+3 *53:11 *139:I 4.5 
+*END
+
+*D_NET *54 0.00742354
+*CONN
+*P mgmt_gpio_out[3] I
+*I *148:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *110:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_out[3] 0.000439091
+2 *148:I 0
+3 *110:I 0.000181309
+4 *54:11 0.0006204
+5 *110:I mgmt_gpio_out_buf[6] 2.17594e-05
+6 *54:11 *55:14 0.00159129
+7 *108:I *54:11 0.00153439
+8 *109:I *54:11 0.000435189
+9 *147:I *54:11 6.13757e-06
+10 *43:11 *110:I 0.000797884
+11 *43:11 *54:11 0.000711399
+12 *52:11 *54:11 0
+13 *53:11 *110:I 0.000265962
+14 *53:11 *54:11 0.000818719
+*RES
+1 mgmt_gpio_out[3] *54:11 19.485 
+2 *54:11 *110:I 16.02 
+3 *54:11 *148:I 4.5 
+*END
+
+*D_NET *55 0.00619523
+*CONN
+*P mgmt_gpio_out[4] I
+*I *111:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *149:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[4] 0.000884262
+2 *111:I 0
+3 *149:I 0.000144874
+4 *55:14 0.00102914
+5 *55:14 mgmt_gpio_out_buf[17] 6.21429e-05
+6 *55:14 mgmt_gpio_out_buf[3] 0.000470548
+7 *55:14 mgmt_gpio_out_buf[4] 0
+8 *55:14 *56:16 0.000304194
+9 *101:I *55:14 7.59525e-05
+10 *104:I *55:14 0.000261113
+11 *106:I *55:14 0.000117847
+12 *144:I *149:I 0.000552381
+13 *8:8 *149:I 0
+14 *10:12 *149:I 0.000233228
+15 *52:11 *55:14 0.000261113
+16 *53:11 *55:14 0.000207143
+17 *54:11 *55:14 0.00159129
+*RES
+1 mgmt_gpio_out[4] *55:14 24.255 
+2 *55:14 *149:I 6.66 
+3 *55:14 *111:I 4.5 
+*END
+
+*D_NET *56 0.00895082
+*CONN
+*P mgmt_gpio_out[5] I
+*I *112:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *150:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[5] 0.000939329
+2 *112:I 0.000285905
+3 *150:I 2.8856e-05
+4 *56:16 0.00125409
+5 *112:I mgmt_gpio_out_buf[12] 0.00104339
+6 *112:I mgmt_gpio_out_buf[13] 0.000347796
+7 *112:I *114:I 0
+8 *112:I *58:12 0
+9 *150:I mgmt_gpio_out_buf[7] 0.000511464
+10 *150:I mgmt_gpio_out_buf[8] 0.000225045
+11 *56:16 mgmt_gpio_out_buf[17] 0.000552382
+12 *56:16 mgmt_gpio_out_buf[6] 0.000470548
+13 *56:16 mgmt_gpio_out_buf[7] 0.000360071
+14 *56:16 mgmt_gpio_out_buf[8] 6.90477e-06
+15 *56:16 *113:I 0.000184127
+16 *56:16 *57:13 0.000671681
+17 *56:16 *58:12 0.000515556
+18 mgmt_gpio_oeb_buf[0] *112:I 0.000425862
+19 mgmt_gpio_oeb_buf[0] *56:16 1.55424e-05
+20 *90:I *56:16 2.07232e-05
+21 *43:11 *56:16 0.000600849
+22 *45:12 *112:I 0.000186509
+23 *55:14 *56:16 0.000304194
+*RES
+1 mgmt_gpio_out[5] *56:16 28.485 
+2 *56:16 *150:I 9.99 
+3 *56:16 *112:I 14.04 
+*END
+
+*D_NET *57 0.00544234
+*CONN
+*P mgmt_gpio_out[6] I
+*I *151:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*I *113:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 mgmt_gpio_out[6] 0.000462559
+2 *151:I 0.000120493
+3 *113:I 5.82372e-06
+4 *57:13 0.000588876
+5 *113:I *58:12 6.13758e-05
+6 *151:I mgmt_gpio_out_buf[8] 0.00104339
+7 *151:I *58:12 0.00104339
+8 *57:13 *58:12 0.000813101
+9 *87:I *57:13 0.00023067
+10 *51:11 *57:13 0.000216861
+11 *56:16 *113:I 0.000184127
+12 *56:16 *57:13 0.000671681
+*RES
+1 mgmt_gpio_out[6] *57:13 8.325 
+2 *57:13 *113:I 4.77 
+3 *57:13 *151:I 15.66 
+*END
+
+*D_NET *58 0.00713542
+*CONN
+*P mgmt_gpio_out[7] I
+*I *114:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *152:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[7] 0.000526658
+2 *114:I 0.000118399
+3 *152:I 0
+4 *58:12 0.000645057
+5 *114:I mgmt_gpio_out_buf[6] 0.000393741
+6 *58:12 mgmt_gpio_out_buf[6] 0.000269402
+7 *58:12 mgmt_gpio_out_buf[8] 0.000777426
+8 *58:12 *153:I 0
+9 *58:12 *59:8 0.00102613
+10 *87:I *58:12 0.000797884
+11 *112:I *114:I 0
+12 *112:I *58:12 0
+13 *113:I *58:12 6.13758e-05
+14 *151:I *58:12 0.00104339
+15 *51:11 *58:12 0.000147302
+16 *56:16 *58:12 0.000515556
+17 *57:13 *58:12 0.000813101
+*RES
+1 mgmt_gpio_out[7] *58:12 17.415 
+2 *58:12 *152:I 9 
+3 *58:12 *114:I 10.71 
+*END
+
+*D_NET *59 0.00319178
+*CONN
+*P mgmt_gpio_out[8] I
+*I *115:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *153:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[8] 0.0004279
+2 *115:I 0.000169973
+3 *153:I 2.53271e-05
+4 *59:8 0.0006232
+5 *115:I *60:12 0.000132888
+6 *59:8 mgmt_gpio_out_buf[17] 0
+7 *59:8 *60:12 0.000479484
+8 *44:12 *115:I 0
+9 *44:12 *153:I 0.000306879
+10 *44:12 *59:8 0
+11 *58:12 *153:I 0
+12 *58:12 *59:8 0.00102613
+*RES
+1 mgmt_gpio_out[8] *59:8 11.835 
+2 *59:8 *153:I 9.45 
+3 *59:8 *115:I 10.71 
+*END
+
+*D_NET *60 0.00328528
+*CONN
+*P mgmt_gpio_out[9] I
+*I *116:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *154:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out[9] 0.000388688
+2 *116:I 0.000121846
+3 *154:I 0
+4 *60:12 0.000510533
+5 *116:I mgmt_gpio_out_buf[17] 0.000393741
+6 *60:12 mgmt_gpio_out_buf[17] 0.000683866
+7 *115:I *60:12 0.000132888
+8 *44:12 *60:12 0.000574231
+9 *59:8 *60:12 0.000479484
+*RES
+1 mgmt_gpio_out[9] *60:12 12.735 
+2 *60:12 *154:I 9 
+3 *60:12 *116:I 10.71 
+*END
+
+*D_NET *61 0.000653153
+*CONN
+*P mgmt_gpio_out_buf[0] O
+*I *117:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[0] 0.000107286
+2 *117:Z 0.000107286
+3 mgmt_gpio_out_buf[0] mgmt_gpio_out_buf[1] 0.000219291
+4 *11:8 mgmt_gpio_out_buf[0] 0.000219291
+*RES
+1 *117:Z mgmt_gpio_out_buf[0] 6.975 
+*END
+
+*D_NET *62 0.00312837
+*CONN
+*P mgmt_gpio_out_buf[10] O
+*I *118:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[10] 0.000497907
+2 *118:Z 0.000497907
+3 mgmt_gpio_out_buf[10] mgmt_gpio_out_buf[11] 0.000469908
+4 mgmt_gpio_out_buf[10] mgmt_gpio_out_buf[8] 0
+5 mgmt_gpio_out_buf[10] mgmt_gpio_out_buf[9] 0.00126907
+6 *44:12 mgmt_gpio_out_buf[10] 0.000184127
+7 *45:12 mgmt_gpio_out_buf[10] 0.000209445
+*RES
+1 *118:Z mgmt_gpio_out_buf[10] 14.265 
+*END
+
+*D_NET *63 0.00149
+*CONN
+*P mgmt_gpio_out_buf[11] O
+*I *119:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[11] 0.000196453
+2 *119:Z 0.000196453
+3 mgmt_gpio_out_buf[11] mgmt_gpio_out_buf[12] 0.000443056
+4 mgmt_gpio_out_buf[10] mgmt_gpio_out_buf[11] 0.000469908
+5 *45:12 mgmt_gpio_out_buf[11] 0.000184127
+*RES
+1 *119:Z mgmt_gpio_out_buf[11] 9.225 
+*END
+
+*D_NET *64 0.00311348
+*CONN
+*P mgmt_gpio_out_buf[12] O
+*I *120:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[12] 0.000274244
+2 *120:Z 0.000274244
+3 mgmt_gpio_out_buf[12] mgmt_gpio_out_buf[13] 0.000721293
+4 mgmt_gpio_out_buf[12] mgmt_gpio_out_buf[6] 0.000159577
+5 mgmt_gpio_out_buf[11] mgmt_gpio_out_buf[12] 0.000443056
+6 *112:I mgmt_gpio_out_buf[12] 0.00104339
+7 *45:12 mgmt_gpio_out_buf[12] 0.000197681
+*RES
+1 *120:Z mgmt_gpio_out_buf[12] 11.745 
+*END
+
+*D_NET *65 0.00679827
+*CONN
+*P mgmt_gpio_out_buf[13] O
+*I *121:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[13] 0.000675085
+2 *121:Z 0.000675085
+3 mgmt_gpio_out_buf[13] mgmt_gpio_out_buf[14] 0.000690333
+4 mgmt_gpio_out_buf[13] mgmt_gpio_out_buf[6] 3.06879e-05
+5 mgmt_gpio_out_buf[12] mgmt_gpio_out_buf[13] 0.000721293
+6 *112:I mgmt_gpio_out_buf[13] 0.000347796
+7 *45:12 mgmt_gpio_out_buf[13] 0.000650583
+8 *46:11 mgmt_gpio_out_buf[13] 0.00300741
+*RES
+1 *121:Z mgmt_gpio_out_buf[13] 18.945 
+*END
+
+*D_NET *66 0.00701466
+*CONN
+*P mgmt_gpio_out_buf[14] O
+*I *122:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[14] 0.000948489
+2 *122:Z 0.000948489
+3 mgmt_gpio_out_buf[14] mgmt_gpio_out_buf[15] 0.000308797
+4 mgmt_gpio_oeb_buf[1] mgmt_gpio_out_buf[14] 0.000207232
+5 mgmt_gpio_out_buf[13] mgmt_gpio_out_buf[14] 0.000690333
+6 *83:I mgmt_gpio_out_buf[14] 0.000559528
+7 *120:I mgmt_gpio_out_buf[14] 0.000184127
+8 *123:I mgmt_gpio_out_buf[14] 0.000124286
+9 *45:12 mgmt_gpio_out_buf[14] 0.000184127
+10 *46:11 mgmt_gpio_out_buf[14] 0.0020254
+11 *47:11 mgmt_gpio_out_buf[14] 2.07143e-05
+12 *49:5 mgmt_gpio_out_buf[14] 0.000680248
+13 *50:11 mgmt_gpio_out_buf[14] 0
+14 *51:11 mgmt_gpio_out_buf[14] 0.000132888
+*RES
+1 *122:Z mgmt_gpio_out_buf[14] 30.105 
+*END
+
+*D_NET *67 0.00141632
+*CONN
+*P mgmt_gpio_out_buf[15] O
+*I *123:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[15] 0.000200338
+2 *123:Z 0.000200338
+3 mgmt_gpio_out_buf[15] mgmt_gpio_out_buf[16] 0.000311338
+4 mgmt_gpio_oeb_buf[0] mgmt_gpio_out_buf[15] 0.000211377
+5 mgmt_gpio_out_buf[14] mgmt_gpio_out_buf[15] 0.000308797
+6 *124:I mgmt_gpio_out_buf[15] 6.13758e-05
+7 *50:11 mgmt_gpio_out_buf[15] 0.000122751
+*RES
+1 *123:Z mgmt_gpio_out_buf[15] 18.135 
+*END
+
+*D_NET *68 0.00211306
+*CONN
+*P mgmt_gpio_out_buf[16] O
+*I *124:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[16] 0.000398133
+2 *124:Z 0.000398133
+3 mgmt_gpio_out_buf[16] mgmt_gpio_out_buf[17] 0.000219291
+4 mgmt_gpio_oeb_buf[0] mgmt_gpio_out_buf[16] 0
+5 mgmt_gpio_out_buf[15] mgmt_gpio_out_buf[16] 0.000311338
+6 *124:I mgmt_gpio_out_buf[16] 0.000724785
+7 *50:11 mgmt_gpio_out_buf[16] 6.13757e-05
+*RES
+1 *124:Z mgmt_gpio_out_buf[16] 18.855 
+*END
+
+*D_NET *69 0.00703813
+*CONN
+*P mgmt_gpio_out_buf[17] O
+*I *125:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[17] 0.00170436
+2 *125:Z 0.00170436
+3 mgmt_gpio_oeb_buf[1] mgmt_gpio_out_buf[17] 0.000879442
+4 mgmt_gpio_out_buf[16] mgmt_gpio_out_buf[17] 0.000219291
+5 *85:I mgmt_gpio_out_buf[17] 6.13758e-05
+6 *116:I mgmt_gpio_out_buf[17] 0.000393741
+7 *50:11 mgmt_gpio_out_buf[17] 0.00077717
+8 *55:14 mgmt_gpio_out_buf[17] 6.21429e-05
+9 *56:16 mgmt_gpio_out_buf[17] 0.000552382
+10 *59:8 mgmt_gpio_out_buf[17] 0
+11 *60:12 mgmt_gpio_out_buf[17] 0.000683866
+*RES
+1 *125:Z mgmt_gpio_out_buf[17] 35.865 
+*END
+
+*D_NET *70 0.00128667
+*CONN
+*P mgmt_gpio_out_buf[1] O
+*I *128:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[1] 0.000298735
+2 *128:Z 0.000298735
+3 mgmt_gpio_out_buf[1] mgmt_gpio_out_buf[2] 0.000469908
+4 mgmt_gpio_out_buf[0] mgmt_gpio_out_buf[1] 0.000219291
+5 *11:8 mgmt_gpio_out_buf[1] 0
+*RES
+1 *128:Z mgmt_gpio_out_buf[1] 9.225 
+*END
+
+*D_NET *71 0.00206529
+*CONN
+*P mgmt_gpio_out_buf[2] O
+*I *139:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[2] 0.000352399
+2 *139:Z 0.000352399
+3 mgmt_gpio_out_buf[2] mgmt_gpio_out_buf[3] 0.000720526
+4 mgmt_gpio_out_buf[1] mgmt_gpio_out_buf[2] 0.000469908
+5 *106:I mgmt_gpio_out_buf[2] 0
+6 *52:11 mgmt_gpio_out_buf[2] 0.000170062
+*RES
+1 *139:Z mgmt_gpio_out_buf[2] 11.745 
+*END
+
+*D_NET *72 0.00429567
+*CONN
+*P mgmt_gpio_out_buf[3] O
+*I *148:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[3] 0.000350035
+2 *148:Z 0.000350035
+3 mgmt_gpio_out_buf[3] mgmt_gpio_out_buf[4] 0.00219994
+4 mgmt_gpio_out_buf[2] mgmt_gpio_out_buf[3] 0.000720526
+5 *101:I mgmt_gpio_out_buf[3] 0
+6 *52:11 mgmt_gpio_out_buf[3] 0.000204586
+7 *55:14 mgmt_gpio_out_buf[3] 0.000470548
+*RES
+1 *148:Z mgmt_gpio_out_buf[3] 12.645 
+*END
+
+*D_NET *73 0.00464781
+*CONN
+*P mgmt_gpio_out_buf[4] O
+*I *149:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[4] 0.00082384
+2 *149:Z 0.00082384
+3 mgmt_gpio_out_buf[4] mgmt_gpio_out_buf[5] 0.000183472
+4 mgmt_gpio_oeb_buf[0] mgmt_gpio_out_buf[4] 0
+5 mgmt_gpio_out_buf[3] mgmt_gpio_out_buf[4] 0.00219994
+6 *100:I mgmt_gpio_out_buf[4] 1.86509e-05
+7 *106:I mgmt_gpio_out_buf[4] 0.000163195
+8 *107:I mgmt_gpio_out_buf[4] 0
+9 *8:8 mgmt_gpio_out_buf[4] 0.000117863
+10 *43:11 mgmt_gpio_out_buf[4] 0
+11 *52:11 mgmt_gpio_out_buf[4] 0.000317015
+12 *55:14 mgmt_gpio_out_buf[4] 0
+*RES
+1 *149:Z mgmt_gpio_out_buf[4] 24.795 
+*END
+
+*D_NET *74 0.000984038
+*CONN
+*P mgmt_gpio_out_buf[5] O
+*I *150:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[5] 0.000171083
+2 *150:Z 0.000171083
+3 mgmt_gpio_out_buf[5] mgmt_gpio_out_buf[6] 0.000192439
+4 mgmt_gpio_out_buf[4] mgmt_gpio_out_buf[5] 0.000183472
+5 *117:I mgmt_gpio_out_buf[5] 6.13758e-05
+6 *43:11 mgmt_gpio_out_buf[5] 0.000204586
+*RES
+1 *150:Z mgmt_gpio_out_buf[5] 7.605 
+*END
+
+*D_NET *75 0.00560764
+*CONN
+*P mgmt_gpio_out_buf[6] O
+*I *151:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[6] 0.000615678
+2 *151:Z 0.000615678
+3 mgmt_gpio_out_buf[6] mgmt_gpio_out_buf[7] 0.000390375
+4 mgmt_gpio_out_buf[6] mgmt_gpio_out_buf[9] 9.09232e-05
+5 mgmt_gpio_out_buf[12] mgmt_gpio_out_buf[6] 0.000159577
+6 mgmt_gpio_out_buf[13] mgmt_gpio_out_buf[6] 3.06879e-05
+7 mgmt_gpio_out_buf[5] mgmt_gpio_out_buf[6] 0.000192439
+8 *79:I mgmt_gpio_out_buf[6] 6.13758e-05
+9 *90:I mgmt_gpio_out_buf[6] 0
+10 *101:I mgmt_gpio_out_buf[6] 0.000184127
+11 *110:I mgmt_gpio_out_buf[6] 2.17594e-05
+12 *114:I mgmt_gpio_out_buf[6] 0.000393741
+13 *117:I mgmt_gpio_out_buf[6] 6.13758e-05
+14 *43:11 mgmt_gpio_out_buf[6] 0.000638308
+15 *45:12 mgmt_gpio_out_buf[6] 0.00141164
+16 *56:16 mgmt_gpio_out_buf[6] 0.000470548
+17 *58:12 mgmt_gpio_out_buf[6] 0.000269402
+*RES
+1 *151:Z mgmt_gpio_out_buf[6] 25.785 
+*END
+
+*D_NET *76 0.00230555
+*CONN
+*P mgmt_gpio_out_buf[7] O
+*I *152:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[7] 0.000234055
+2 *152:Z 0.000234055
+3 mgmt_gpio_out_buf[7] mgmt_gpio_out_buf[8] 0.00051415
+4 mgmt_gpio_out_buf[6] mgmt_gpio_out_buf[7] 0.000390375
+5 *79:I mgmt_gpio_out_buf[7] 6.13758e-05
+6 *150:I mgmt_gpio_out_buf[7] 0.000511464
+7 *56:16 mgmt_gpio_out_buf[7] 0.000360071
+*RES
+1 *152:Z mgmt_gpio_out_buf[7] 10.485 
+*END
+
+*D_NET *77 0.00428213
+*CONN
+*P mgmt_gpio_out_buf[8] O
+*I *153:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[8] 0.000573809
+2 *153:Z 0.000573809
+3 mgmt_gpio_out_buf[8] mgmt_gpio_out_buf[9] 0.000567598
+4 mgmt_gpio_out_buf[10] mgmt_gpio_out_buf[8] 0
+5 mgmt_gpio_out_buf[7] mgmt_gpio_out_buf[8] 0.00051415
+6 *150:I mgmt_gpio_out_buf[8] 0.000225045
+7 *151:I mgmt_gpio_out_buf[8] 0.00104339
+8 *44:12 mgmt_gpio_out_buf[8] 0
+9 *56:16 mgmt_gpio_out_buf[8] 6.90477e-06
+10 *58:12 mgmt_gpio_out_buf[8] 0.000777426
+*RES
+1 *153:Z mgmt_gpio_out_buf[8] 15.165 
+*END
+
+*D_NET *78 0.0073402
+*CONN
+*P mgmt_gpio_out_buf[9] O
+*I *154:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_8
+*CAP
+1 mgmt_gpio_out_buf[9] 0.000578612
+2 *154:Z 0.000578612
+3 mgmt_gpio_out_buf[10] mgmt_gpio_out_buf[9] 0.00126907
+4 mgmt_gpio_out_buf[6] mgmt_gpio_out_buf[9] 9.09232e-05
+5 mgmt_gpio_out_buf[8] mgmt_gpio_out_buf[9] 0.000567598
+6 *44:12 mgmt_gpio_out_buf[9] 0.000634216
+7 *45:12 mgmt_gpio_out_buf[9] 0.00362117
+*RES
+1 *154:Z mgmt_gpio_out_buf[9] 27.405 
+*END
